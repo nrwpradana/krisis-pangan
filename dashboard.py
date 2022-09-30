@@ -23,8 +23,9 @@ st.markdown(
 p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
 # Cover Image
-cover = Image.open('./cover_wheat.png')
-st.image(cover, use_column_width=True)
+#cover = Image.open('./cover_wheat.png')
+#st.image(cover, use_column_width=True)
+
 # Title
 st.markdown("# How Much does The War in Ukraine Impact Global Food Market?<br />\
             <p style='font-family:Arial; color:Black; font-size: 28px;'>A Comparative Analysis with 2007-2008 World Food Price Crisis", unsafe_allow_html=True)
