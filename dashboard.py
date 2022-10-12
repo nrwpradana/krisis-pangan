@@ -27,10 +27,10 @@ st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan Duni
 
 # Ringkasan
 st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
-            Dari 8 bulan sejak dimulainya Konflik <b>Ukraina - Rusia (Februari - Oktober 2022)</b>, banyak dampak signifikan telah diterima di seluruh dunia. \
+            Dari 8 bulan sejak dimulainya Konflik <b>Ukraina - Rusia (Februari - Oktober 2022)</b>, banyak dampak signifikan telah diterima di seluruh dunia.\
             Salah satunya adalah <b>krisis pangan global lainnya yang tumpang tindih dengan krisis pangan akibat Covid-19</b>. Hal ini karena kedua peperangan utama memiliki posisi yang signifikan sebagai produsen komoditas terkait pangan.\ 
             Di sini saya akan membahas tentang <b>seberapa banyak perubahan yang telah diambil pasar makanan global selama krisis</b>,\
-            dan bagaimana jika dibandingkan dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini Krisis Harga Pangan 2007-2008.</p>',
+            dan bagaimana jika dibandingkan dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini <b>Krisis Harga Pangan 2007-2008.</b></p>',
             unsafe_allow_html=True)
 
 #---------------SECTION 1 : General Overview --------------------------
