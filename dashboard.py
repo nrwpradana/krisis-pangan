@@ -78,8 +78,8 @@ with export_3:
                 '&emsp;1. <b>Cereals</b> : Wheat, Corn (Maize), Barley<br>'\
                 '&emsp;2. <b>Vegetable oils</b> : Sunflower oil, Rapeseed oil', unsafe_allow_html=True)
 with export_4:
-    st.markdown(p_format+'untuk komoditas non-makanan, Rusia juga merupakan pengekspor terkemuka pupuk berbasis Nitrogen, Fosfor, dan Kalium, \ 
-    sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
+    st.markdown(p_format+'<b> untuk komoditas non-makanan</b>, Rusia juga merupakan pengekspor terkemuka pupuk berbasis <b>Nitrogen, Fosfor, dan Kalium, </b>'\ 
+    'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
 st.markdown("---") 
 
 #-------------------------------------------
