@@ -22,7 +22,7 @@ st.markdown(
 p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
 # Judul
-st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan Dunia ?<br />\
+st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
             <p style='font-family:Arial; color:Black; font-size: 28px;'>Analisis Dibandingkan dengan 2007-2008 World Food Price Crisis", unsafe_allow_html=True)
 
 # Ringkasan
@@ -32,6 +32,13 @@ st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan Duni
 #            Di sini saya akan membahas tentang <b>seberapa banyak perubahan yang telah diambil pasar makanan global selama krisis</b>,\
 #            dan bagaimana jika dibandingkan dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini <b>Krisis Harga Pangan 2007-2008.</b></p>',
 #           unsafe_allow_html=True)
+
+st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
+            Dari 8 bulan sejak dimulainya Konflik <b>Ukraina - Rusia (Februari - Oktober 2022)</b>, banyak dampak signifikan telah diterima di seluruh dunia.\
+            Salah satunya adalah <b>krisis pangan global lainnya yang tumpang tindih dengan krisis pangan akibat Covid-19</b>. Hal ini karena kedua peperangan utama memiliki posisi yang signifikan sebagai produsen komoditas terkait pangan.\
+            HDi sini saya akan membahas tentang <b>seberapa banyak perubahan yang telah diambil pasar makanan global selama krisis</b>, \
+            dan <b>bagaimana jika dibandingkan</b> dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini <b>Krisis Harga Pangan 2007-2008.</b></p>',
+            unsafe_allow_html=True)
 
 #---------------SECTION 1 : General Overview --------------------------
 # SECTION 1.1 : Export Fraction from RUS-UKR
