@@ -23,16 +23,8 @@ p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
 # Judul
 st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
-            <p style='font-family:Arial; color:Black; font-size: 28px;'>Analisis Dibandingkan dengan 2007-2008 World Food Price Crisis", unsafe_allow_html=True)
+            <p style='font-family:Arial; color:Black; font-size: 28px;'>Analisis Dibandingkan dengan Krisis Pangan 2007-2008", unsafe_allow_html=True)
 st.text('by Nadhiar Ridho Wahyu Pradana')
-
-# Ringkasan
-#st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
-#            Dari 8 bulan sejak dimulainya Konflik <b>Ukraina - Rusia (Februari - Oktober 2022)</b>, banyak dampak signifikan telah diterima di seluruh dunia.\
-#           Salah satunya adalah <b>krisis pangan global lainnya yang tumpang tindih dengan krisis pangan akibat Covid-19</b>. Hal ini karena kedua peperangan utama memiliki posisi yang signifikan sebagai produsen komoditas terkait pangan.\ 
-#            Di sini saya akan membahas tentang <b>seberapa banyak perubahan yang telah diambil pasar makanan global selama krisis</b>,\
-#            dan bagaimana jika dibandingkan dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini <b>Krisis Harga Pangan 2007-2008.</b></p>',
-#           unsafe_allow_html=True)
 
 st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
             Dari 8 bulan sejak dimulainya Konflik <b>Ukraina - Rusia (Februari - Oktober 2022)</b>, banyak dampak signifikan telah diterima di seluruh dunia.\
@@ -41,9 +33,6 @@ st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
             dan <b>bagaimana jika dibandingkan</b> dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini <b>Krisis Harga Pangan 2007-2008.</b></p>',
             unsafe_allow_html=True)
 
-#---------------SECTION 1 : General Overview --------------------------
-# SECTION 1.1 : Export Fraction from RUS-UKR
-#-------------------------------------------
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 st.header("A. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
 # Global Export Fraction Section
@@ -95,15 +84,12 @@ with export_4:
         'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
 st.markdown("---") 
 
-#-------------------------------------------
-# SECTION : Conclusion
-#-------------------------------------------
 st.header("B. Kesimpulan")
 
 st.markdown(p_format+'<b> Kesimpulan sementara yaitu konflik Rusia-Ukraina dapat menyebabkan krisis pangan dunia. </b>', 
     unsafe_allow_html=True)
 
-# References
+# Referensi
 with st.expander("REFERENSI"):
     st.markdown(p_format+'[1] FAO. (2022). The FAO Food Price Index drops for the third consecutive month in June. <a href="https://www.fao.org/worldfoodsituation/foodpricesindex/en">link</a>.', 
                 unsafe_allow_html=True) 
