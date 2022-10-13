@@ -42,10 +42,11 @@ st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
             unsafe_allow_html=True)
 
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
-st.header("A. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
+
+st.header("A. Perubahan Harga Komoditas Tahun 2022")
 
 html_string = '''
-<iframe title="Commodity price changes in 2022" aria-label="Column Chart" id="datawrapper-chart-BI2gD" 
+<iframe aria-label="Column Chart" id="datawrapper-chart-BI2gD" 
 src="https://datawrapper.dwcdn.net/BI2gD/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; 
 border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";
 window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");
@@ -54,6 +55,7 @@ for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].co
 
 components.html(html_string,height=600)
 
+st.header("B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
 
 # Global Export Fraction 
 st.markdown('<h4 style="font-family:Arial; background-color: beige">'+
@@ -94,17 +96,13 @@ with export_3:
     st.markdown(p_format+'<b>Untuk komoditas makanan</b>, kedua negara ini adalah eksportir terkemuka dari<br><b>dua komoditas :</b><br>'\
                 '&emsp;1. <b>Cereals</b> : Wheat, Corn (Maize), Barley<br>'\
                 '&emsp;2. <b>Vegetable oils</b> : Sunflower oil, Rapeseed oil', unsafe_allow_html=True)
-#with export_4:
-#    st.markdown(p_format+'<b>untuk komoditas non-makanan</b>, Rusia juga merupakan pengekspor terkemuka pupuk berbasis <b>Nitrogen, Fosfor, dan Kalium, </b>'\ 
-#                'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
-#st.markdown("---") 
 
 with export_4:
     st.markdown(p_format+'<b>Untuk komoditas non-makanan</b>, Rusia juga merupakan pengekspor terkemuka pupuk berbasis <b>Nitrogen, Fosfor, dan Kalium, </b>'\
         'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
 st.markdown("---") 
 
-st.header("B. Kesimpulan")
+st.header("C. Kesimpulan")
 
 st.markdown(p_format+'<b> Kesimpulan sementara yaitu konflik Rusia-Ukraina dapat menyebabkan krisis pangan dunia. </b>', 
     unsafe_allow_html=True)
