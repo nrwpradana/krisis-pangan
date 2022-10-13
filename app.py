@@ -11,6 +11,7 @@ import numpy as np
 import figure_style as fs
 import plotly.express as px
 import plotly.graph_objects as go
+import streamlit.components.v1 as components
 from PIL import Image
 st.set_page_config(layout="wide")
 st.markdown(
@@ -39,6 +40,12 @@ st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
             HDi sini saya akan membahas tentang <b>seberapa banyak perubahan yang telah diambil pasar makanan global selama krisis</b>, \
             dan <b>bagaimana jika dibandingkan</b> dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini <b>Krisis Harga Pangan 2007-2008.</b></p>',
             unsafe_allow_html=True)
+
+html_string = '''
+<iframe title="Commodity price changes in 2022" aria-label="Column Chart" id="datawrapper-chart-BI2gD" src="https://datawrapper.dwcdn.net/BI2gD/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(e){if(void 0!==e.data["datawrapper-height"]){var t=document.querySelectorAll("iframe");for(var a in e.data["datawrapper-height"])for(var r=0;r<t.length;r++){if(t[r].contentWindow===e.source)t[r].style.height=e.data["datawrapper-height"][a]+"px"}}}))}();</script>
+'''
+
+components.html(html_string)  # JavaScript works
 
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 st.header("A. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
