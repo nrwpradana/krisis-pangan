@@ -1,3 +1,7 @@
+import sys
+
+print(sys.version)
+
 import os
 from pdb import line_prefix
 import sys
@@ -21,6 +25,8 @@ st.markdown(
 )
 p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
+st.set_page_config(page_title='Krisis Pangan Ukraina-Rusia', page_icon="🇺🇦", layout="wide")
+
 # Judul
 st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
             <p style='font-family:Arial; color:Black; font-size: 28px;'>Analisis Dibandingkan dengan Krisis Pangan 2007-2008", unsafe_allow_html=True)
@@ -35,7 +41,8 @@ st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
 
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 st.header("A. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
-# Global Export Fraction Section
+
+# Global Export Fraction 
 st.markdown('<h4 style="font-family:Arial; background-color: beige">'+
             '&ensp;Ukraina & Rusia adalah pengekspor besar komoditas utama yang mendukung ketahanan pangan global\
             </h4>', unsafe_allow_html=True)
@@ -71,7 +78,7 @@ with export_2:
     
 export_3, export_4 = st.columns(2)
 with export_3:
-    st.markdown(p_format+'<b>As for food</b>, kedua negara ini adalah eksportir terkemuka dari<br><b>dua komoditas :</b><br>'\
+    st.markdown(p_format+'<b>Untuk komoditas makanan</b>, kedua negara ini adalah eksportir terkemuka dari<br><b>dua komoditas :</b><br>'\
                 '&emsp;1. <b>Cereals</b> : Wheat, Corn (Maize), Barley<br>'\
                 '&emsp;2. <b>Vegetable oils</b> : Sunflower oil, Rapeseed oil', unsafe_allow_html=True)
 #with export_4:
