@@ -81,7 +81,7 @@ with export_1:
     fig1.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=True, gridcolor='black')
     fig1.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig1)
-    st.caption("Source : UN Comtrade Database, https://comtrade.un.org/data.")
+    st.caption("Source : UN Comtrade Database, https://comtradeplus.un.org/.")
 with export_2:
     # Plot Fertilizer Export Fraction
     fig2 = px.bar(exp_fert, y="Commodity", x="ExportShare_19-20", color="Country", orientation='h', 
@@ -94,7 +94,7 @@ with export_2:
     fig2.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=True, gridcolor='black')
     fig2.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig2)
-    st.caption("Source : UN Comtrade Database, https://comtrade.un.org/data.")
+    st.caption("Source : UN Comtrade Database, https://comtradeplus.un.org/.")
     
 export_3, export_4 = st.columns(2)
 with export_3:
