@@ -111,6 +111,8 @@ st.header("C. Kesimpulan")
 
 st.markdown(p_format+'<b> Kesimpulan sementara yaitu konflik Rusia-Ukraina dapat menyebabkan krisis pangan dunia. </b>', 
     unsafe_allow_html=True)
+st.markdown("---") 
+
 
 # Referensi
 with st.expander("REFERENSI"):
