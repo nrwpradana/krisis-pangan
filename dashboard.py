@@ -25,7 +25,7 @@ st.markdown(
 )
 p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
-st.set_page_config(page_title='Ukraina-Rusia', page_icon="🇺🇦", layout="wide")
+#st.set_page_config(page_title='Ukraina-Rusia', page_icon="🇺🇦", layout="wide")
 
 # Judul
 st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
