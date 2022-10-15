@@ -13,7 +13,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit.components.v1 as components
 from PIL import Image
-st.set_page_config(page_title='Food Crisis', page_icon = "🍔", layout = 'wide', initial_sidebar_state = 'auto')
+st.set_page_config(page_title='Krisis Pangan', page_icon = "🍔", layout = 'wide', initial_sidebar_state = 'auto')
 st.markdown(
     """
 <style>
@@ -31,7 +31,7 @@ p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
 # Judul
 st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
-            <p style='font-family:Arial; color:Black; font-size: 28px;'>Analisis Dibandingkan dengan Krisis Pangan 2007-2008", unsafe_allow_html=True)
+            <p style='font-family:Arial; color:Black; font-size: 28px;'>Dibanding dengan Krisis Pangan 2007-2008", unsafe_allow_html=True)
 st.text('by Nadhiar Ridho Wahyu Pradana')
 
 st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
