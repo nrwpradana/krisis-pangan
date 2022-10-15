@@ -59,7 +59,7 @@ st.markdown("---")
 st.header("B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
 
 # Global Export Fraction 
-st.markdown('<h4 style="font-family:Arial; background-color: beige">'+
+st.markdown('<h4 style="font-family:Arial; background-color: skyblue">'+
             '&ensp;Ukraina & Rusia adalah pengekspor besar komoditas utama yang mendukung ketahanan pangan global\
             </h4>', unsafe_allow_html=True)
 export_1, export_2 = st.columns(2)
