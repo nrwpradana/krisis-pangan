@@ -80,15 +80,15 @@ with export_1:
     st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
 with export_2:
     # Plot Fertilizer Export Fraction
-    fig2 = px.bar(exp_fert, x="Commodity", y="ExportShare_19-20", color="Country", orientation='v', 
+    fig2 = px.bar(exp_fert, y="Commodity", x="ExportShare_19-20", color="Country", orientation='h', 
               range_x=[0,50], width=600, height=300,
               color_discrete_sequence=['rgba(37,58,255,0.8)', 'rgba(221, 30, 30, 0.8)'],
               template="simple_white")
     fig2.update_layout(title_text="<b>Ekspor Pupuk Global dari Rusia 2019-2020</b>",
                        legend=dict(y=0.5, xanchor="right", title="Sumber Ekspor"))
     fig2.update_traces(hovertemplate='<b>%{y}</b><br> Export Fraction: %{x:.2f}%<extra></extra>')
-    fig2.update_yaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
-    fig2.update_xaxes(title=None, tickfont=dict(size=16))
+    fig2.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
+    fig2.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig2)
     st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
     
