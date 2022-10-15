@@ -58,12 +58,11 @@ st.markdown("---")
 
 #st.header("B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
-            'B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia</h2>', unsafe_allow_html=True)
-
+            'B. Ekspor Bahan Pangan Ukraina - Rusia</h2>', unsafe_allow_html=True)
 
 # Global Export Fraction 
-st.markdown('<h4 style="font-family:Papyrus; background-color: white"><i><center>'+
-            '&ensp;"Ukraina & Rusia adalah pengekspor besar komoditas utama yang mendukung ketahanan pangan global"\
+st.markdown('<h4 style="font-family:Papyrus; background-color: white"><i><center>'+\
+            '"Ukraina & Rusia adalah pengekspor besar komoditas utama yang mendukung ketahanan pangan global"\
             </center></i></h4>', unsafe_allow_html=True)
 export_1, export_2 = st.columns(2)
 exp_food = pd.read_csv("data/1a_export_fraction_food.csv")
