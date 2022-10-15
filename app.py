@@ -56,7 +56,8 @@ st.markdown(p_format+'<b>Perang di Ukraina telah memberikan gejolak besar bagi p
 st.markdown("---") 
 
 
-st.header('<h4 style="font-family:Arial; background-color: skyblue">'+'B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia </h4>')
+#st.header("B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
+st.markdown(f'<h1 style="color:#33ff33;font-size:24px;">{"B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia"}</h1>', unsafe_allow_html=True)
 
 # Global Export Fraction 
 st.markdown('<h4 style="font-family:Arial; background-color: skyblue">'+
