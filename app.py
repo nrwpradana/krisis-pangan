@@ -80,7 +80,7 @@ with export_1:
     st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
 with export_2:
     # Plot Fertilizer Export Fraction
-    fig2 = px.bar(exp_fert, y="Commodity", x="ExportShare_19-20", color="Country", orientation='v', 
+    fig2 = px.bar(exp_fert, x="Commodity", y="ExportShare_19-20", color="Country", orientation='v', 
               range_x=[0,50], width=600, height=300,
               color_discrete_sequence=['rgba(37,58,255,0.8)', 'rgba(221, 30, 30, 0.8)'],
               template="simple_white")
