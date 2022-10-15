@@ -62,7 +62,7 @@ st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
 
 # Global Export Fraction 
 st.markdown('<h4 style="font-family:Papyrus; background-color: white"><i><center><br>'+\
-            '"Ukraina & Rusia adalah pengekspor besar komoditas utama yang mendukung ketahanan pangan global<br>"\
+            '"Ukraina & Rusia adalah pengekspor besar komoditas utama yang mendukung ketahanan pangan global"<br>\
             </center></i></h4>', unsafe_allow_html=True)
 export_1, export_2 = st.columns(2)
 exp_food = pd.read_csv("data/1a_export_fraction_food.csv")
