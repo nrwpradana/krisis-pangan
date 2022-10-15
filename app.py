@@ -57,7 +57,10 @@ st.markdown("---")
 
 
 #st.header("B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
-st.markdown(f'<h1 style="color:#33ff33;font-size:24px;">{"B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia"}</h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="font-family:Arial; background-color: skyblue">'+
+            '&ensp;B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia\
+            </h1>', unsafe_allow_html=True)
+
 
 # Global Export Fraction 
 st.markdown('<h4 style="font-family:Papyrus; background-color: white"><i><center>'+
