@@ -26,8 +26,7 @@ st.markdown(
 )
 p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
-#st.set_page_config(page_title='Ukraina-Rusia', page_icon="🇺🇦", layout="wide")
-#st.set_page_config(page_title='your_title', page_icon = "🇺🇦", layout = 'wide', initial_sidebar_state = 'auto')
+st.set_page_config(page_title='Krisis Pangan Ukraina-Rusia', page_icon='None', layout="centered", initial_sidebar_state="auto", menu_items=None)
 
 # Judul
 st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
@@ -81,7 +80,7 @@ with export_1:
     fig1.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=True, gridcolor='black')
     fig1.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig1)
-    st.caption("Source : UN Comtrade Database, https://comtradeplus.un.org/.")
+    st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
 with export_2:
     # Plot Fertilizer Export Fraction
     fig2 = px.bar(exp_fert, y="Commodity", x="ExportShare_19-20", color="Country", orientation='h', 
@@ -94,7 +93,7 @@ with export_2:
     fig2.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=True, gridcolor='black')
     fig2.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig2)
-    st.caption("Source : UN Comtrade Database, https://comtradeplus.un.org/.")
+    st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
     
 export_3, export_4 = st.columns(2)
 with export_3:
@@ -122,4 +121,3 @@ with st.expander("REFERENSI"):
                 unsafe_allow_html=True) 
     st.markdown(p_format+'[3] The World Bank. (2022). The impact of the war in Ukraine on commodity markets. <a href="https://www.worldbank.org/en/research/commodity-markets">link</a>.', 
                 unsafe_allow_html=True)  
-#st.markdown(p_format+"<b>Data last updated : 05 August 2022</b>", unsafe_allow_html=True)
