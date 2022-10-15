@@ -82,7 +82,7 @@ with export_2:
     # Plot Fertilizer Export Fraction
     fig2 = px.bar(exp_fert, y="Commodity", x="ExportShare_19-20", color="Country", orientation='h', 
               range_x=[0,50], width=600, height=300,
-              color_discrete_sequence=['rgba(37,58,255,0.8)', 'rgba(221, 30, 30, 0.8)'],
+              color_discrete_sequence=['rgba(49,36,79,255)', 'rgba(221, 30, 30, 0.8)'],
               template="simple_white")
     fig2.update_layout(title_text="<b>Ekspor Pupuk Global dari Rusia 2019-2020</b>",
                        legend=dict(y=0.5, xanchor="right", title="Sumber Ekspor"))
