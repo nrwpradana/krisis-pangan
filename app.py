@@ -71,7 +71,7 @@ with export_1:
               range_x=[0,50], width=600, height=300,
               color_discrete_sequence=['rgba(255,244,51,0.8)', 'rgba(37,58,255,0.8)'],
               template="simple_white")
-    fig1.update_layout(title_text="<b>Global Food Export Fraction Ukraina & Rusia, 2019-2020</b>",
+    fig1.update_layout(title_text="<b>Ekspor Agrifood dari Ukraina & Rusia, 2019-2020</b>",
                        legend=dict(y=0.5, xanchor="right", title="Export Source"))
     fig1.update_traces(hovertemplate='<b>%{y}</b><br> Export Fraction: %{x:.2f}%<extra></extra>')
     fig1.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=True, gridcolor='black')
@@ -84,7 +84,7 @@ with export_2:
               range_x=[0,50], width=600, height=300,
               color_discrete_sequence=['rgba(37,58,255,0.8)', 'rgba(221, 30, 30, 0.8)'],
               template="simple_white")
-    fig2.update_layout(title_text="<b>Global Fertilizer Export Fraction dari Rusia & Belarus, 2019-2020</b>",
+    fig2.update_layout(title_text="<b>Ekspor Pupuk Global dari Rusia 2019-2020</b>",
                        legend=dict(y=0.5, xanchor="right", title="Export Source"))
     fig2.update_traces(hovertemplate='<b>%{y}</b><br> Export Fraction: %{x:.2f}%<extra></extra>')
     fig2.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=True, gridcolor='black')
