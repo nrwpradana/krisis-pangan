@@ -13,7 +13,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit.components.v1 as components
 from PIL import Image
-st.set_page_config(layout="wide")
+st.set_page_config(page_title='your_title', page_icon = "🇺🇦", layout = 'wide', initial_sidebar_state = 'auto'))
 st.markdown(
     """
 <style>
@@ -26,7 +26,8 @@ st.markdown(
 )
 p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
-st.set_page_config(page_title='Krisis Pangan Ukraina-Rusia', page_icon='None', layout="centered", initial_sidebar_state="auto", menu_items=None)
+#st.set_page_config(page_title='Ukraina-Rusia', page_icon="🇺🇦", layout="wide")
+#st.set_page_config(page_title='your_title', page_icon = "🇺🇦", layout = 'wide', initial_sidebar_state = 'auto')
 
 # Judul
 st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
