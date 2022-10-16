@@ -157,8 +157,8 @@ with st.expander("Detail Impor"):
         f_imp_wheat, f_imp_fert = fs.plot_import(slice_wheat, slice_fert)
     
     plt_import_wheat.plotly_chart(f_imp_wheat); plt_import_fert.plotly_chart(f_imp_fert)
-    plt_import_wheat.caption("Source : UN Comtrade Database, https://comtrade.un.org/. Accessed on July 2022")
-    plt_import_fert.caption("Source : UN Comtrade Database, https://comtrade.un.org/. Accessed on July 2022")
+    plt_import_wheat.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
+    plt_import_fert.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
     st.caption('\* Missing data for wheat&fertilizers import \
                &ensp;\*\* Missing data for fertilizers import')
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
