@@ -105,9 +105,9 @@ with export_3:
 with export_4:
 #    st.markdown(p_format+'<b>Untuk komoditas non-makanan</b>, Rusia juga merupakan pengekspor terkemuka pupuk berbasis <b>Nitrogen, Fosfor, dan Kalium, </b>'\
 #        'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
-    st.markdown('<h4 style="font-family:Papyrus; background-color: white"><i><center><br>'+\
-            '"Ukraina & Rusia adalah pengekspor besar komoditas utama yang mendukung ketahanan pangan global"<br>\
-            </center></i></h4>', unsafe_allow_html=True)
+    st.markdown('<h5 style="font-family:Papyrus; background-color: white"><center>'+\
+            'Rusia merupakan pengekspor terkemuka pupuk pertanian seperti Potassium, Phospate dan Nitrogen\
+            </center></h5>', unsafe_allow_html=True)
 st.markdown("---") 
 
 st.header("C. Kesimpulan")
