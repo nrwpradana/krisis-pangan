@@ -74,8 +74,8 @@ with export_1:
               color_discrete_sequence=['rgba(255,244,51,0.8)', 'rgba(37,58,255,0.8)'],
               template="simple_white")
     fig1.update_layout(title_text="<b>Ekspor Agrifood Ukraina & Rusia 2019-2020</b>",
-                       legend=dict(y=0.5, xanchor="right", title="Sumber Ekspor"))
-    fig1.update_traces(hovertemplate='<b>%{y}</b><br> Export Fraction: %{x:.2f}%<extra></extra>')
+                       legend=dict(y=0.5, xanchor="right", title="Negara"))
+    fig1.update_traces(hovertemplate='<b>%{y}</b><br> Persentase Ekspor: %{x:.2f}%<extra></extra>')
     fig1.update_xaxes(title="<b>Persentase Ekspor (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
     fig1.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig1)
@@ -87,8 +87,8 @@ with export_2:
               color_discrete_sequence=['rgba(49,36,79,255)', 'rgba(221, 30, 30, 0.8)'],
               template="simple_white")
     fig2.update_layout(title_text="<b>Ekspor Pupuk Rusia 2019-2020</b>",
-                       legend=dict(y=0.5, xanchor="right", title="Sumber Ekspor"))
-    fig2.update_traces(hovertemplate='<b>%{y}</b><br> Export Fraction: %{x:.2f}%<extra></extra>')
+                       legend=dict(y=0.5, xanchor="right", title="Negara"))
+    fig2.update_traces(hovertemplate='<b>%{y}</b><br> Persentase Ekspor: %{x:.2f}%<extra></extra>')
     fig2.update_xaxes(title="<b>Persentase Ekspor (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
     fig2.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig2)
@@ -96,14 +96,17 @@ with export_2:
     
 export_3, export_4 = st.columns(2)
 with export_3:
-    st.markdown(p_format+'<b>Untuk komoditas makanan</b>, kedua negara ini adalah eksportir terkemuka dari<br><b>dua komoditas :</b><br>'\
-                '&emsp;1. <b>Cereals</b> : Wheat, Corn (Maize), Barley<br>'\
-                '&emsp;2. <b>Vegetable oils</b> : Sunflower oil, Rapeseed oil', unsafe_allow_html=True)
+#    st.markdown(p_format+'<b>Untuk komoditas makanan</b>, kedua negara ini adalah eksportir terkemuka dari<br><b>dua komoditas :</b><br>'\
+#                '&emsp;1. <b>Cereals</b> : Wheat, Corn (Maize), Barley<br>'\
+#                '&emsp;2. <b>Vegetable oils</b> : Sunflower oil, Rapeseed oil', unsafe_allow_html=True)
+    st.markdown('<h5 style="font-family:Arial; background-color: white"><center><br>'+\
+            'Ukraina dan Rusia merupakan eksportir besar untuk komoditas Cereals dan Vegetables Oil.\
+            </center></h5>', unsafe_allow_html=True)
 
 with export_4:
 #    st.markdown(p_format+'<b>Untuk komoditas non-makanan</b>, Rusia juga merupakan pengekspor terkemuka pupuk berbasis <b>Nitrogen, Fosfor, dan Kalium, </b>'\
 #        'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
-    st.markdown('<h5 style="font-family:Arial; background-color: white"><center><br>'+\
+     st.markdown('<h5 style="font-family:Arial; background-color: white"><center><br>'+\
             'Rusia merupakan pengekspor terkemuka pupuk pertanian <br>seperti Potassium, Phospate dan Nitrogen.\
             </center></h5>', unsafe_allow_html=True)
 st.markdown("---") 
