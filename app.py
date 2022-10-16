@@ -131,7 +131,7 @@ fil_import_reg = np.sort(np.append(import_share['Regions_WB'].unique(), "All"))
 import_share_wheat = import_share.sort_values('Wheat_TOT', ascending=True).reset_index(drop=True)
 import_share_fert  = import_share.sort_values('Fertilizer', ascending=True).reset_index(drop=True)
 #Bar Chart for Import Fraction
-with st.expander("Import Dependance Details"):
+with st.expander("Detail Impor"):
     filter_11, filter_12 = st.columns(2); st.markdown("---")
     plt_import_wheat, plt_import_fert = st.columns(2)
     # Filter by Regions and Incomes
