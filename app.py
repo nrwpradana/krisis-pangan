@@ -110,17 +110,17 @@ with export_4:
 st.markdown("---") 
 
 st.markdown('<h5 style="font-family:Arial; background-color: beige">'+
-            '&ensp;Banyak negara berkembang dsangat bergantung pada impor pangan pertanian dari Ukraina dan Rusia\
+            'Banyak negara berkembang sangat bergantung pada impor pangan pertanian dari Ukraina dan Rusia\
             </h5>', unsafe_allow_html=True)
 
 #Summary
 st.markdown('#### Observasi 75 negara non-Eropa yang dianggap negara berkembang dan kurang berkembang*:')
 import_1, import_2 = st.columns(2)
 with import_1:
-    st.markdown("# :ear_of_rice: 46,7%")
+    st.markdown("# 🍞 46,7%")
     st.markdown(p_format+'<b>Having high dependance** to wheat imports from Ukraine and Russia</b>', unsafe_allow_html=True)
 with import_2:
-    st.markdown("# 🧴 22,7%")
+    st.markdown("# 🥡 22,7%")
     st.markdown(p_format+'<b>Having high dependance** to fertilizers imports from Russia</b>', unsafe_allow_html=True)
 st.caption("\* Based on \"Special Region\" group from FAOSTAT")
 st.caption("\** Import proportion >25%")
