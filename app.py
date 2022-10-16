@@ -109,9 +109,9 @@ with export_4:
             </h5>', unsafe_allow_html=True)
 st.markdown("---") 
 
-st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise">'+
+st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise"><italic>'+
             'Banyak negara berkembang sangat bergantung pada impor pangan pertanian dari Ukraina dan Rusia*\
-            </h5>', unsafe_allow_html=True)
+            </italic></h5>', unsafe_allow_html=True)
 
 #Summary
 #st.markdown('#### Observasi 75 negara non-Eropa yang dianggap negara berkembang dan kurang berkembang*:')
