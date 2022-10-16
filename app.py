@@ -107,7 +107,7 @@ with export_4:
 #    st.markdown(p_format+'<b>Untuk komoditas non-makanan</b>, Rusia juga merupakan pengekspor terkemuka pupuk berbasis <b>Nitrogen, Fosfor, dan Kalium, </b>'\
 #        'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
      st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
-            'Rusia merupakan pengekspor terkemuka pupuk pertanian <br>seperti Potassium, Phospate dan Nitrogen.\
+            'Rusia merupakan eksportie pupuk pertanian <br>seperti Potassium, Phospate dan Nitrogen.\
             </h5>', unsafe_allow_html=True)
 st.markdown("---") 
 
