@@ -99,26 +99,22 @@ with export_2:
     
 export_3, export_4 = st.columns(2)
 with export_3:
-#    st.markdown(p_format+'<b>Untuk komoditas makanan</b>, kedua negara ini adalah eksportir terkemuka dari<br><b>dua komoditas :</b><br>'\
-#                '&emsp;1. <b>Cereals</b> : Wheat, Corn (Maize), Barley<br>'\
-#                '&emsp;2. <b>Vegetable oils</b> : Sunflower oil, Rapeseed oil', unsafe_allow_html=True)
     st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
             'Ukraina dan Rusia merupakan eksportir besar komoditas<br>Cereals dan Vegetables Oil.\
             </h5>', unsafe_allow_html=True)
 
-with export_4:
-#    st.markdown(p_format+'<b>Untuk komoditas non-makanan</b>, Rusia juga merupakan pengekspor terkemuka pupuk berbasis <b>Nitrogen, Fosfor, dan Kalium, </b>'\
-#        'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
+with export_4:    
      st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
             'Rusia merupakan eksportir pupuk pertanian seperti<br>Potassium, Phospate dan Nitrogen.\
             </h5>', unsafe_allow_html=True)
 st.markdown("---") 
 
-st.markdown('<h4 style="font-family:Arial; background-color: beige">'+
-            '&ensp;Many developing and least developed countries highly reliant on agrifood imports from Ukraine and Russia\
-            </h4>', unsafe_allow_html=True)
+st.markdown('<h5 style="font-family:Arial; background-color: beige">'+
+            '&ensp;Banyak negara berkembang dsangat bergantung pada impor pangan pertanian dari Ukraina dan Rusia\
+            </h5>', unsafe_allow_html=True)
+
 #Summary
-st.markdown('#### Observing 75 non-European countries considered as developing and least developed countries*:')
+st.markdown('#### Observasi 75 negara non-Eropa yang dianggap negara berkembang dan kurang berkembang*:')
 import_1, import_2 = st.columns(2)
 with import_1:
     st.markdown("# :ear_of_rice: 46,7%")
