@@ -39,7 +39,6 @@ st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;">\
 
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 
-#st.header("A. Perubahan Harga Komoditas Tahun 2022")
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
             'A. Perubahan Harga Komoditas Tahun 2022</h2><br>', unsafe_allow_html=True)
 
@@ -54,15 +53,14 @@ components.html(html_string,height=430)
 
 st.markdown(p_format+'<b>Perang di Ukraina telah memberikan gejolak besar bagi pasar komoditas.</b> Pandangan Pasar Komoditas terbaru dari Bank Dunia membahas bagaimana '\
     'perang telah mengganggu produksi dan perdagangan beberapa komoditas, terutama di mana Rusia dan Ukraina adalah eksportir utama, termasuk energi, pupuk, dan biji-bijian.'\
-    'Kenaikan harga ini terjadi di atas pasar komoditas yang sudah ketat karena pemulihan permintaan yang solid dari pandemi Covid-19, serta berbagai kendala pasokan terkait pandemi.',unsafe_allow_html=True)
+    ' Kenaikan harga ini terjadi di atas pasar komoditas yang sudah ketat karena pemulihan permintaan yang solid dari pandemi Covid-19, serta berbagai kendala pasokan terkait pandemi.',unsafe_allow_html=True)
 st.markdown("---") 
 
 
-#st.header("B. Ukraina & Rusia merupakan Negara Penting dalam Pasar Agrifood Dunia")
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
             'B. Ekspor Bahan Pangan Ukraina - Rusia</h2>', unsafe_allow_html=True)
 
-# Global Export Fraction 
+# Global Ekspor
 st.markdown('<h4 style="font-family:Papyrus; background-color: white"><i><center><br>'+\
             '"Ukraina & Rusia adalah pengekspor besar komoditas utama yang mendukung ketahanan pangan global"<br>\
             </center></i></h4>', unsafe_allow_html=True)
@@ -75,10 +73,10 @@ with export_1:
               range_x=[0,50], width=600, height=300,
               color_discrete_sequence=['rgba(255,244,51,0.8)', 'rgba(37,58,255,0.8)'],
               template="simple_white")
-    fig1.update_layout(title_text="<b>Ekspor Agrifood dari Ukraina & Rusia 2019-2020</b>",
+    fig1.update_layout(title_text="<b>Ekspor Agrifood Ukraina & Rusia 2019-2020</b>",
                        legend=dict(y=0.5, xanchor="right", title="Sumber Ekspor"))
     fig1.update_traces(hovertemplate='<b>%{y}</b><br> Export Fraction: %{x:.2f}%<extra></extra>')
-    fig1.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
+    fig1.update_xaxes(title="<b>Persentase Ekspor (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
     fig1.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig1)
     st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
@@ -88,10 +86,10 @@ with export_2:
               range_x=[0,50], width=600, height=300,
               color_discrete_sequence=['rgba(49,36,79,255)', 'rgba(221, 30, 30, 0.8)'],
               template="simple_white")
-    fig2.update_layout(title_text="<b>Ekspor Pupuk Global dari Rusia 2019-2020</b>",
+    fig2.update_layout(title_text="<b>Ekspor Pupuk Rusia 2019-2020</b>",
                        legend=dict(y=0.5, xanchor="right", title="Sumber Ekspor"))
     fig2.update_traces(hovertemplate='<b>%{y}</b><br> Export Fraction: %{x:.2f}%<extra></extra>')
-    fig2.update_xaxes(title="<b>Export Fraction (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
+    fig2.update_xaxes(title="<b>Persentase Ekspor (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
     fig2.update_yaxes(title=None, tickfont=dict(size=16))
     st.plotly_chart(fig2)
     st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
