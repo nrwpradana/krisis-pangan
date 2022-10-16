@@ -99,16 +99,16 @@ with export_3:
 #    st.markdown(p_format+'<b>Untuk komoditas makanan</b>, kedua negara ini adalah eksportir terkemuka dari<br><b>dua komoditas :</b><br>'\
 #                '&emsp;1. <b>Cereals</b> : Wheat, Corn (Maize), Barley<br>'\
 #                '&emsp;2. <b>Vegetable oils</b> : Sunflower oil, Rapeseed oil', unsafe_allow_html=True)
-    st.markdown('<h5 style="font-family:Arial; background-color: white"><center><br>'+\
+    st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
             'Ukraina dan Rusia merupakan eksportir besar komoditas<br>Cereals dan Vegetables Oil.\
-            </center></h5>', unsafe_allow_html=True)
+            </h5>', unsafe_allow_html=True)
 
 with export_4:
 #    st.markdown(p_format+'<b>Untuk komoditas non-makanan</b>, Rusia juga merupakan pengekspor terkemuka pupuk berbasis <b>Nitrogen, Fosfor, dan Kalium, </b>'\
 #        'sekaligus menjadi salah satu produsen bahan bakar terkemuka seperti minyak mentah dan gas alam.', unsafe_allow_html=True)    
-     st.markdown('<h5 style="font-family:Arial; background-color: white"><center><br>'+\
+     st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
             'Rusia merupakan pengekspor terkemuka pupuk pertanian <br>seperti Potassium, Phospate dan Nitrogen.\
-            </center></h5>', unsafe_allow_html=True)
+            </h5>', unsafe_allow_html=True)
 st.markdown("---") 
 
 st.header("C. Kesimpulan")
