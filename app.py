@@ -41,7 +41,7 @@ st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#33
 
 #st.header("A. Perubahan Harga Komoditas Tahun 2022")
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
-            'A. Perubahan Harga Komoditas Tahun 2022</h2>', unsafe_allow_html=True)
+            'A. Perubahan Harga Komoditas Tahun 2022</h2><br>', unsafe_allow_html=True)
 
 html_string = '''
 <iframe title="Commodity price changes in 2022" aria-label="Column Chart" id="datawrapper-chart-BI2gD" 
