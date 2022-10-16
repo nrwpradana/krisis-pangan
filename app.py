@@ -110,11 +110,11 @@ with export_4:
 st.markdown("---") 
 
 st.markdown('<h5 style="font-family:Arial; background-color: beige">'+
-            'Banyak negara berkembang sangat bergantung pada impor pangan pertanian dari Ukraina dan Rusia\
+            'Banyak negara berkembang sangat bergantung pada impor pangan pertanian dari Ukraina dan Rusia*\
             </h5>', unsafe_allow_html=True)
 
 #Summary
-st.markdown('#### Observasi 75 negara non-Eropa yang dianggap negara berkembang dan kurang berkembang*:')
+#st.markdown('#### Observasi 75 negara non-Eropa yang dianggap negara berkembang dan kurang berkembang*:')
 import_1, import_2 = st.columns(2)
 with import_1:
     st.markdown("# 🍞 46,7%")
