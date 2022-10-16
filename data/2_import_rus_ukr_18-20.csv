@@ -1,0 +1,76 @@
+﻿Country,Wheat_RUS,Wheat_UKR,Wheat_TOT,Fertilizer,Regions_WB,IncGroups_WB
+Afghanistan,0.006939607,0,0.006939607,0,South Asia,Low Income
+Antigua and Barbuda,0,0,0,0,Latin America & Caribbean,High Income
+Armenia,95.80032748,2.150043158,97.95037064,49.33125424,Europe & Central Asia,Lower Middle Income
+Azerbaijan,86.16535254,0.083339912,86.24869245,81.36318813,Europe & Central Asia,Upper Middle Income
+Bangladesh*,,,,,South Asia,Lower Middle Income
+Barbados,0,0,0,0.075216838,Latin America & Caribbean,High Income
+Benin,99.94324868,0,99.94324868,28.2491221,Sub-Saharan Africa,Low Income
+Bhutan*,,,,,South Asia,Lower Middle Income
+Bolivia (Plurinational State of),0,0,0,8.032126796,Latin America & Caribbean,Lower Middle Income
+Botswana,0.105386128,0,0.105386128,0,Sub-Saharan Africa,Upper Middle Income
+Burkina Faso,36.12349674,1.477252313,37.60074906,17.34346382,Sub-Saharan Africa,Low Income
+Burundi,49.8554116,0,49.8554116,11.0021608,Sub-Saharan Africa,Low Income
+Cambodia,51.31187775,0,51.31187775,0.215631902,East Asia & Pacific,Lower Middle Income
+Cameroon,6.562734484,2.442707167,9.00544165,31.56451507,Sub-Saharan Africa,Lower Middle Income
+Central African Rep.**,,,,69.75907867,Sub-Saharan Africa,Low Income
+Comoros,0,0,0,0,Sub-Saharan Africa,Low Income
+Congo,0,0,0,1.993024318,Sub-Saharan Africa,Lower Middle Income
+Côte d'Ivoire,0,0,0,25.04834774,Sub-Saharan Africa,Lower Middle Income
+Cuba*,,,,,Latin America & Caribbean,Upper Middle Income
+Dem. Rep. of the Congo,62.3856578,6.4586128,68.8442706,27.11720528,Sub-Saharan Africa,Low Income
+Djibouti*,,,,,Middle East & North Africa,Lower Middle Income
+Dominican Rep.,0,0,0,15.76787698,Latin America & Caribbean,Upper Middle Income
+Egypt,60.28767548,21.16898792,81.4566634,0.931991954,Middle East & North Africa,Lower Middle Income
+El Salvador,0,0,0,27.0483918,Latin America & Caribbean,Lower Middle Income
+Eswatini,18.06031665,1.221874131,19.28219078,0,Europe & Central Asia,Lower Middle Income
+Ethiopia,14.15364847,23.69897242,37.85262089,1.202685545,Sub-Saharan Africa,Low Income
+Gabon*,,,,,Sub-Saharan Africa,Upper Middle Income
+Gambia,,,,4.871030831,Sub-Saharan Africa,Low Income
+Ghana,33.34469336,0,33.34469336,28.75279059,Sub-Saharan Africa,Lower Middle Income
+Grenada,0,0,0,0,Latin America & Caribbean,Upper Middle Income
+Guinea*,,,,,Sub-Saharan Africa,Low Income
+Honduras,0,0,0,48.86697193,Latin America & Caribbean,Lower Middle Income
+India,51.86758593,0,51.86758593,7.114191082,South Asia,Lower Middle Income
+Jamaica,0,0,0,0.249230298,Latin America & Caribbean,Upper Middle Income
+Jordan,6.020806135,15.80074045,21.82154659,0.575039174,Middle East & North Africa,Lower Middle Income
+Kazakhstan,98.95296743,0.040034343,98.99300177,72.86774619,Europe & Central Asia,Upper Middle Income
+Kenya,33.79037255,8.14109116,41.93146371,17.52635066,Sub-Saharan Africa,Lower Middle Income
+Kiribati**,,,,0,East Asia & Pacific,Lower Middle Income
+Kyrgyzstan,19.16654899,0,19.16654899,36.49151391,Europe & Central Asia,Lower Middle Income
+Madagascar,54.26356728,0,54.26356728,0,Sub-Saharan Africa,Low Income
+Malawi,37.24317838,6.203937523,43.4471159,0.648774617,Sub-Saharan Africa,Low Income
+Maldives,0,0,0,0,South Asia,Upper Middle Income
+Mali,35.08476827,8.743961117,43.82872938,13.85496738,Sub-Saharan Africa,Low Income
+Mauritania,17.31396511,23.96675019,41.2807153,2.630427346,Sub-Saharan Africa,Lower Middle Income
+Mauritius,0,0,0,1.010688761,Sub-Saharan Africa,Upper Middle Income
+Mongolia,99.98864887,0,99.98864887,89.98534786,East Asia & Pacific,Lower Middle Income
+Morocco,6.737890782,21.68278746,28.42067824,23.30082891,Middle East & North Africa,Lower Middle Income
+Namibia,50.10136859,0,50.10136859,5.107869054,Sub-Saharan Africa,Upper Middle Income
+Nepal,0,0.518525985,0.518525985,0,South Asia,Low Income
+Nicaragua,81.56805806,0,81.56805806,34.05795025,Latin America & Caribbean,Lower Middle Income
+Niger,0,0,0,15.5510378,Sub-Saharan Africa,Low Income
+North Macedonia,0.477627883,0,0.477627883,20.92988492,Europe & Central Asia,Upper Middle Income
+Pakistan,43.51813489,45.77613957,89.29427446,0.422359014,South Asia,Lower Middle Income
+Peru,2.687809824,0,2.687809824,42.4417541,Latin America & Caribbean,Upper Middle Income
+Rep. of Moldova,4.04001422,45.26064169,49.30065591,71.48069862,Europe & Central Asia,Lower Middle Income
+Rwanda,66.46314611,0,66.46314611,15.74938187,Sub-Saharan Africa,Low Income
+Saint Kitts and Nevis*,,,,,Latin America & Caribbean,High Income
+Saint Lucia,0,0,0,0,Latin America & Caribbean,Upper Middle Income
+Saint Vincent and the Grenadines,0,0,0,0,Latin America & Caribbean,Upper Middle Income
+Sao Tome and Principe,0,0,0,0,Sub-Saharan Africa,Lower Middle Income
+Senegal,49.36048672,9.226036515,58.58652324,26.87738218,Sub-Saharan Africa,Low Income
+Sierra Leone,0,0,0,0,Sub-Saharan Africa,Low Income
+Solomon Islands,0,0,0,0.558068662,East Asia & Pacific,Lower Middle Income
+Sri Lanka,30.7002346,4.3747085,35.0749431,2.686702688,South Asia,Lower Middle Income
+Syrian Arab Republic*,,,,,Middle East & North Africa,Lower Middle Income
+Togo,49.86522389,0,49.86522389,7.618957706,Sub-Saharan Africa,Low Income
+Trinidad and Tobago,0,0,0,0,Latin America & Caribbean,High Income
+Tunisia,7.430957317,49.24574505,56.67670236,3.370124674,Middle East & North Africa,Lower Middle Income
+Uganda,39.73966812,13.88160369,53.62127182,13.28552097,Sub-Saharan Africa,Low Income
+United Rep. of Tanzania,61.15485386,5.918107014,67.07296087,16.39733767,Sub-Saharan Africa,Low Income
+Vanuatu*,,,,,East Asia & Pacific,Lower Middle Income
+Venezuela (Bolivarian Republic of)*,,,,,Latin America & Caribbean,Upper Middle Income
+Yemen,31.85685985,16.45450225,48.31136209,0,Middle East & North Africa,Lower Middle Income
+Zambia,5.694297037,0,5.694297037,1.269882405,Sub-Saharan Africa,Lower Middle Income
+Zimbabwe,6.46230074,9.473131003,15.93543174,9.143397243,Sub-Saharan Africa,Low Income

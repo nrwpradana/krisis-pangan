@@ -114,151 +114,57 @@ with export_4:
             </h5>', unsafe_allow_html=True)
 st.markdown("---") 
 
-#BAGIAN C
-
-st.header("C. Inflase Harga Komoditas")
-
-col_211, col_212, padding_21 = st.columns([1,5,5])
-with col_211:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/FAO_logo.svg/800px-FAO_logo.svg.png", width=100)
-with col_212:
-    st.info("### FAO Food Price Index (FFPI)")
-st.markdown(p_format+'FFPI measures the <b>monthly change in international prices of several food commodities.</b>\
-            It\'s measured as the average of five categories weighted by the average export shares of each groups over 2014-2016.',unsafe_allow_html=True)
-# Read FFPI Index Value
-df_08 = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Index_08')
-df_08['Date'] = pd.to_datetime(df_08['Date'], format='%d/%m/%Y')
-df_22 = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Index_22')
-df_22['Date'] = pd.to_datetime(df_22['Date'], format='%d/%m/%Y')
-
-FAO_idx, FAO_inf = st.tabs(["📈 FFPI", "🔺 FFPI Inflation"])
-with FAO_idx:
-    # Plot Index Value
-    plt_ffpi_08, plt_ffpi_22 = st.columns(2)
-    f_ffpi_08 = fs.plot_fao_idx(df_08, 'Food Price Crisis (2008) Timeframe')
-    f_ffpi_22 = fs.plot_fao_idx(df_22, 'Ukraine Crisis (2022) Timeframe')
-    st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;"><b>Note : 2014-2016 = 100</b></p>', unsafe_allow_html=True)
-    plt_ffpi_08.plotly_chart(f_ffpi_08); plt_ffpi_22.plotly_chart(f_ffpi_22)
-    st.caption('Data Source : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/. Accessed on July 2022')
-    # Summary Description
-    st.markdown(p_format+'<b>In general, index values from 2022 timeframe tend to have higher value than its 2008 counterparts for all categories except dairy.</b> \
-                The most <b>drastic difference is from vegetable oils index<b> which at its peak <b>surpasses its 2008 values by 60-90%</b>. \
-                <b>A similar trend</b> also emerges where the index steadily climbs up until around June in the last year (2008, 2022) where it starts to stabilize.',
-                unsafe_allow_html=True)
-    st.markdown(p_format+'<b>Looking at the nominal value, FPI in June 2022 is down to 154 (-2,3%) from the previous month, and has been on down slope from March. However, it\'s still around 23\% more than 2021 value. \
-                Cereals and vegetable oils are also having similar trend</b>, as with both of them are the most affected categories among the five categories. \
-                On the other hands, <b>meat, dairy and sugar</b> is still having an upward trend with substantially lower inflation rate</b> compared to the other two.', 
-                unsafe_allow_html=True)
-    st.markdown(p_format+'International price has been dropping for cereals due to higher wheat availability from northern hemisphere, \
-        higher maize stocks from South America due to harvests progressed ahead of time, which also exerting downward pressure to other grain prices, weakening them as a result. \
-        On the other hands, vegetable oils prices have also declining due to better export prospect of palm oil from Indonesia, \
-        sluggish import demand for sunflower and soybean oil, and upcoming harvest season in general [1].',
-                unsafe_allow_html=True)
-
-# Plot Index Inflation
-ffpi_inf = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Inflation')
-with FAO_inf:
-    fao_cat = ['Food Price Index', 'Meat', 'Dairy', 'Cereals', 'Edible Oils', 'Sugar']
-    fao_by_cat = st.radio("BY CATEGORIES :", fao_cat, horizontal=True) 
-    ffpi_inf_1, ffpi_inf_2 = st.columns([6,5])
-    if fao_by_cat:
-        f_ffpi_inf = fs.plot_idx_inf(ffpi_inf, fao_by_cat, "FFPI Inflation Rate 2022 v.s. 2008")
-        ffpi_inf_1.plotly_chart(f_ffpi_inf)
-    ffpi_inf_1.caption('Data Source : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/. Accessed on July 2022')
-    ffpi_inf_1.caption('Inflation rate is measured as changes in nominal prices during the 23-month period e.g. Jan 2022 v.s. Jan 2020.')
-    # Summary Description
-    with ffpi_inf_2:
-        st.markdown(p_format+'<br><br><br><b>2022 Inflation rate is substantially lower for FPI, dairy, and cereals compared to 2008. \
-            Lower value may be attibuted to higher food prices in 2020 due to Covid-19 whereas 2006 is more stable.</b><br><br> \
-            However <b>edible oils and sugar 2022 receives higher inflation rate</b> which may be because the market for these two categories is <b>more volatile due to fast development of biofuels</b>, \
-            which takes on share of which edible oils and sugar used upon. Lastly meat index inflation has similar values between crisis.',
-            unsafe_allow_html=True)
-
-
-st.markdown('---')
-col_221, col_222, padding_22 = st.columns([1,5,5])
-with col_221:
-    st.image("https://brandlogos.net/wp-content/uploads/2021/12/world_bank-brandlogo.net_.png", width=100)
-with col_222:
-    st.info("### World Bank Commodities Price Data")
-
-# Read WB Commodity Price Value
-wb_cp_08 = pd.read_csv('data/3b_CMO_food_fert_08.csv')
-wb_cp_08['Date'] = pd.to_datetime(df_08['Date'], format='%d/%m/%Y')
-wb_cp_22 = pd.read_csv('data/3b_CMO_food_fert_22.csv')
-wb_cp_22['Date'] = pd.to_datetime(df_22['Date'], format='%d/%m/%Y')
- 
-WB_idx, WB_inf, WB_idx_inf = st.tabs(["📈 Commodity Price (CP)", "🔺 Commodity Price Inflation", "🔶 Commodity Index Inflation"])
-
-with WB_idx:
-    # Plot WB CP Value
-    cp_by_cat = st.radio("BY CATEGORIES :", ['Grains', 'Edible Oils', 'Fertilizers'], horizontal=True) 
-    plt_cp_08, plt_cp_22 = st.columns(2)
-    f_cp_08 = fs.plot_wb_cp(wb_cp_08, 'Food Price Crisis (2008) Timeframe', cp_by_cat)
-    f_cp_22 = fs.plot_wb_cp(wb_cp_22, 'Ukraine Crisis (2022) Timeframe', cp_by_cat)
-    plt_cp_08.plotly_chart(f_cp_08); plt_cp_22.plotly_chart(f_cp_22)
-    st.caption('Source : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets. Accessed on July 2022')
+st.markdown('<h4 style="font-family:Arial; background-color: beige">'+
+            '&ensp;Many developing and least developed countries highly reliant on agrifood imports from Ukraine and Russia\
+            </h4>', unsafe_allow_html=True)
+#Summary
+st.markdown('#### Observing 75 non-European countries considered as developing and least developed countries*:')
+import_1, import_2 = st.columns(2)
+with import_1:
+    st.markdown("# :ear_of_rice: 46,7%")
+    st.markdown(p_format+'<b>Having high dependance** to wheat imports from Ukraine and Russia</b>', unsafe_allow_html=True)
+with import_2:
+    st.markdown("# 🧴 22,7%")
+    st.markdown(p_format+'<b>Having high dependance** to fertilizers imports from Russia</b>', unsafe_allow_html=True)
+st.caption("\* Based on \"Special Region\" group from FAOSTAT")
+st.caption("\** Import proportion >25%")
+#df for Import Fraction
+import_share = pd.read_csv("data/2_import_rus_ukr_18-20.csv").fillna(0)
+fil_import_inc = np.sort(np.append(import_share['IncGroups_WB'].unique(), "All"))
+fil_import_reg = np.sort(np.append(import_share['Regions_WB'].unique(), "All"))
+import_share_wheat = import_share.sort_values('Wheat_TOT', ascending=True).reset_index(drop=True)
+import_share_fert  = import_share.sort_values('Fertilizer', ascending=True).reset_index(drop=True)
+#Bar Chart for Import Fraction
+with st.expander("Import Dependance Details"):
+    filter_11, filter_12 = st.columns(2); st.markdown("---")
+    plt_import_wheat, plt_import_fert = st.columns(2)
+    # Filter by Regions and Incomes
+    with filter_11:
+        import_by_region = st.radio("BY REGIONS :", fil_import_reg) 
+    with filter_12:
+        import_by_income = st.radio("BY INCOMES :", fil_import_inc)
+    # Plot Import Fraction with Filter  
+    if (import_by_income == "All") and (import_by_region == "All"):
+        f_imp_wheat, f_imp_fert = fs.plot_import(import_share_wheat, import_share_fert)
+    elif import_by_income == "All":
+        slice_wheat = import_share_wheat[import_share_wheat["Regions_WB"] == import_by_region]
+        slice_fert  = import_share_fert[import_share_fert["Regions_WB"] == import_by_region]
+        f_imp_wheat, f_imp_fert = fs.plot_import(slice_wheat, slice_fert)
+    elif import_by_region == "All":
+        slice_wheat = import_share_wheat[import_share_wheat["IncGroups_WB"] == import_by_income]
+        slice_fert  = import_share_fert[import_share_fert["IncGroups_WB"] == import_by_income]
+        f_imp_wheat, f_imp_fert = fs.plot_import(slice_wheat, slice_fert)
+    else:
+        filter_import = (import_share["Regions_WB"] == import_by_region) & (import_share["IncGroups_WB"] == import_by_income)
+        slice_wheat = import_share[filter_import].sort_values("Wheat_TOT", ascending=True).reset_index(drop=True)
+        slice_fert  = import_share[filter_import].sort_values("Fertilizer", ascending=True).reset_index(drop=True)
+        f_imp_wheat, f_imp_fert = fs.plot_import(slice_wheat, slice_fert)
     
-    # Summary Description
-    st.markdown(p_format+'<b>For grains, the price of wheat, soybean, and maize have reached higher peak than in the 2008 timeframe back in March and slowly stabilizing onwards.</b>\
-        <b>Rice on the other hands is more stable during 2022 crisis</b>, unlike 2008 crisis where it\'s also highly affected alongside other commodities. \
-        Here we can see that distruption of grain supplies from the Black Sea truly affecting global grain prices. We may also exert it to the spike of fertilizers price since maize and wheat are fertilizer-intensive crops.', unsafe_allow_html=True)
-    
-    st.markdown(p_format+'<b>All of edible oil products reach new peak during 2022 timeframe compared to 2008. Currently the price sits at around 15-40% increase since the start of 2022.</b>\
-        Several key factors affecting edible oils price inflation : [2, 3]<br>. \
-        &ensp;&ensp;1. Palm oil production decline from Indonesia & Malaysia amidst Covid-19 pandemic.<br>\
-        &ensp;&ensp;2. Evergrowing biofuel production which ultimately uses palm oil and soybean oil as primary ingredients.<br>\
-        &ensp;&ensp;3. Supply chain distruption from Ukraine & Russia due to ongoing conflict.<br>\
-        &ensp;&ensp;4. Recent drought in Brazil which reduces soybean supply capacity.', unsafe_allow_html=True)
-    
-    st.markdown(p_format+'<b>Continuing uptrend since 2020, fertilizers prices reached its peak during March 2022.</b> \
-        <b>Higher price spike is observed for Urea and Potassium Chloride compared to 2008 crisis</b>, while <b>Phosphate-based fertilizer veils lower than 2008.</b> \
-        Several key factors affecting fertilizers price inflation : [4, 5]<br>\
-        &ensp;&ensp;1. Price increase of natural gas which is one of the main ingredient for Nitrogenous fertilizers.<br>\
-        &ensp;&ensp;2. Economic sanctions which cut off fertilizers trade from Russia and Belarus.<br>\
-        &ensp;&ensp;3. Export restriction from Russia and China to ensure the fulfillment domestic needs first.', unsafe_allow_html=True)
-    
-# Read WB CP Inflation Data
-wb_cp_inf = pd.read_csv('data/3b_CMO_food_fert_inflation_08&22.csv')
-with WB_inf:
-    # Plot WB CP Inflation
-    cp_cat = ['Palm oil', 'Soybean oil','Rapeseed oil','Sunflower oil',
-              'Soybeans', 'Maize', 'Rice', 'Wheat, US',
-              'Phosphate rock', 'DAP', 'TSP', 'Urea', 'Potassium chloride']
-    cp_inf_by_cat = st.selectbox("BY CATEGORIES :", cp_cat)
-
-    cp_inf_1, cp_inf_2 = st.columns([6,5])
-    if fao_by_cat:
-        f_cp_inf = fs.plot_idx_inf(wb_cp_inf, cp_inf_by_cat, "WB Commodity Price Inflation Rate 2022 v.s. 2008")
-        cp_inf_1.plotly_chart(f_cp_inf)
-    cp_inf_1.caption('Data Source : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets. Accessed on July 2022')
-    cp_inf_1.caption('Inflation rate is measured as changes in nominal prices during the 23-month period e.g. Jan 2022 v.s. Jan 2020.')
-    
-    # Summary Description
-    with cp_inf_2:
-        st.markdown(p_format+'<br><br><br><b>Taking a note from rice price data, we can also see that rice prices during 2022 deflate compared to 2020.</b> \
-            <b>Other grains inflation except for wheat also tend to be lower than 2008 crisis, however it\'s still in the range of 50-150% inflation compared to 2020.</b><br><br>\
-            <b>All edible oils inflation rate</b>, except rapeseed oil which rocketed to 200%, <b>have similar profile to 2008 crisis</b>, that is in the realm of 150-200%.<br><br>\
-            <b>As for fertilizers, their inflation rate is kept around 150-300%</b>. Phosphate rock and potassium chloride have similar inflation rate profiles to 2008 crisis. \
-            Urea already reach its 2008 highest peak from the start of the year. <b>DAP and TSP inflation rate is substantially lower than during 2008 crisis.</b>',
-            unsafe_allow_html=True)
-    
-# Read WB Index Inflation Data
-wb_cp_idx_inf = pd.read_csv('data/3b_CMO_indices_inflation_08&22.csv')
-wb_cp_idx_inf['Date'] = pd.to_datetime(wb_cp_idx_inf['Date'], format='%d/%m/%Y')    
-with WB_idx_inf:
-    # Plot WB Index Inflation
-    cp_idx_inf_1, cp_idx_inf_2 = st.columns([7,5])
-    f_cp_idx_inf = fs.plot_wb_idx_inf(wb_cp_idx_inf)
-    cp_idx_inf_1.plotly_chart(f_cp_idx_inf)
-    st.caption('Source : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets. Accessed on July 2022')
-    
-    # Summary Description
-    with cp_idx_inf_2:
-        st.markdown('<p style="font-family:Arial; color:Black; font-size: 24px;">'+'<br><br><br> \
-            Looking at food and fertilizers price inflation during the 21st century, the current price spike ranks second to 2007-2008 food price crisis and only third after 1974 global recession.',
-            unsafe_allow_html=True)
-
+    plt_import_wheat.plotly_chart(f_imp_wheat); plt_import_fert.plotly_chart(f_imp_fert)
+    plt_import_wheat.caption("Source : UN Comtrade Database, https://comtrade.un.org/. Accessed on July 2022")
+    plt_import_fert.caption("Source : UN Comtrade Database, https://comtrade.un.org/. Accessed on July 2022")
+    st.caption('\* Missing data for wheat&fertilizers import \
+               &ensp;\*\* Missing data for fertilizers import')
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 
 st.header("C. Kesimpulan")
