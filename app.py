@@ -109,7 +109,7 @@ with export_4:
             </h5>', unsafe_allow_html=True)
 st.markdown("---") 
 
-st.markdown('<h5 style="font-family:Arial; background-color: beige">'+
+st.markdown('<h5 style="font-family:Arial; background-color: snow">'+
             'Banyak negara berkembang sangat bergantung pada impor pangan pertanian dari Ukraina dan Rusia*\
             </h5>', unsafe_allow_html=True)
 
