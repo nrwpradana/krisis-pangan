@@ -130,15 +130,18 @@ fil_import_inc = np.sort(np.append(import_share['IncGroups_WB'].unique(), "All")
 fil_import_reg = np.sort(np.append(import_share['Regions_WB'].unique(), "All"))
 import_share_wheat = import_share.sort_values('Wheat_TOT', ascending=True).reset_index(drop=True)
 import_share_fert  = import_share.sort_values('Fertilizer', ascending=True).reset_index(drop=True)
+
 #Bar Chart for Import Fraction
 with st.expander("Detail Impor"):
     filter_11, filter_12 = st.columns(2); st.markdown("---")
     plt_import_wheat, plt_import_fert = st.columns(2)
+    
     # Filter by Regions and Incomes
     with filter_11:
         import_by_region = st.radio("BY REGIONS :", fil_import_reg) 
     with filter_12:
         import_by_income = st.radio("BY INCOMES :", fil_import_inc)
+    
     # Plot Import Fraction with Filter  
     if (import_by_income == "All") and (import_by_region == "All"):
         f_imp_wheat, f_imp_fert = fs.plot_import(import_share_wheat, import_share_fert)
