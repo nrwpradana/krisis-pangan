@@ -189,7 +189,7 @@ with FAO_idx:
     # Summary Description
     st.markdown(p_format+'<b>Secara umum, nilai indeks dari jangka waktu 2022 cenderung memiliki nilai yang lebih tinggi daripada tahun 2008 untuk semua kategori</b> kecuali produk susu. \
     Perbedaan paling drastis adalah dari indeks minyak nabati yang pada puncaknya melampaui nilai 2008 sebesar 60-90%.\
-    Dilihat dari nilai nominalnya, FFPI pada Juni 2022 turun menjadi 154 (-2,3%) dari bulan sebelumnya, dan mulai menurun sejak Maret. Namun, masih sekitar 23% lebih dari nilai 2021. \
+    Dilihat dari nilai nominalnya, FPI pada Juni 2022 turun menjadi 154 (-2,3%) dari bulan sebelumnya, dan mulai menurun sejak Maret. Namun, masih sekitar 23% lebih dari nilai 2021. \
     Sereal dan minyak nabati juga memiliki tren yang sama, karena keduanya adalah kategori yang paling terpengaruh di antara lima kategori.',
     unsafe_allow_html=True)
                 
@@ -207,7 +207,7 @@ with FAO_inf:
 #   ffpi_inf_1.caption('Inflation rate is measured as changes in nominal prices during the 23-month period e.g. Jan 2022 v.s. Jan 2020.')
     # Summary Description
     with ffpi_inf_2:
-        st.markdown(p_format+'<br><br><br><b>Tingkat inflasi 2022 secara substansial lebih rendah untuk Food Price Index (FPI)</b>, produk susu, dan sereal dibandingkan dengan tahun 2008. \
+        st.markdown(p_format+'<br><br><br><b>Tingkat inflasi 2022 secara substansial lebih rendah untuk Food Price Index (FPI)</b>, produk susu dan sereal dibandingkan dengan tahun 2008. \
         Nilai yang lebih rendah mungkin disebabkan oleh harga pangan yang lebih tinggi pada tahun 2020 karena Covid-19 sedangkan tahun 2006 lebih stabil.',
         unsafe_allow_html=True)
 
