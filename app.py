@@ -252,7 +252,7 @@ with WB_inf:
 
     cp_inf_1, cp_inf_2 = st.columns([6,5])
     if fao_by_cat:
-        f_cp_inf = fs.plot_idx_inf(wb_cp_inf, cp_inf_by_cat, "WB Commodity Price Inflation Rate 2022 v.s. 2008")
+        f_cp_inf = fs.plot_idx_inf(wb_cp_inf, cp_inf_by_cat, "World Bank Commodity Price Inflation Rate 2022 & 2008")
         cp_inf_1.plotly_chart(f_cp_inf)
     cp_inf_1.caption('Sumber : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets.')
     
