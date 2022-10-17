@@ -238,7 +238,7 @@ with WB_idx:
     st.markdown(p_format+'<b>Untuk biji-bijian, harga gandum, kedelai, dan jagung telah mencapai puncak yang lebih tinggi daripada periode 2008 di bulan Maret</b> dan perlahan-lahan mulai stabil.\
     Beras di sisi lain lebih stabil selama krisis 2022, tidak seperti krisis 2008 yang juga sangat terpengaruh bersama komoditas lainnya.  \
     Saya juga dapat menekan lonjakan harga pupuk karena jagung dan gandum adalah tanaman yang membutuhkan pupuk. Semua produk minyak nabati mencapai puncak baru selama jangka waktu 2022 dibandingkan dengan tahun 2008. Saat ini harganya berada pada kenaikan sekitar 15-40% sejak awal tahun 2022.\
-    Harga pupuk mencapai puncaknya selama Maret 2022.<b> Lonjakan harga yang lebih tinggi diamati untuk Urea dan Kalium Klorida dibandingkan krisis 2008,</b> sedangkan selubung pupuk berbasis Fosfat lebih rendah dari 2008.', 
+    Harga pupuk mencapai puncaknya selama Maret 2022.<b> Lonjakan harga yang lebih tinggi diamati untuk Urea dan Kalium Klorida dibandingkan krisis 2008,</b> sedangkan pupuk berbasis Fosfat lebih rendah dari 2008.', 
     unsafe_allow_html=True)
     
 # Read WB CP Inflation Data
