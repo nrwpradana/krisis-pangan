@@ -183,7 +183,7 @@ df_08['Date'] = pd.to_datetime(df_08['Date'], format='%d/%m/%Y')
 df_22 = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Index_22')
 df_22['Date'] = pd.to_datetime(df_22['Date'], format='%d/%m/%Y')
 
-FAO_idx, FAO_inf = st.tabs(["📈 FFPI", "🔺 FFPI Inflasi"])
+FAO_idx, FAO_inf = st.tabs(["🎢 FFPI", "🚀 FFPI Inflasi"])
 with FAO_idx:
     # Plot Index Value
     plt_ffpi_08, plt_ffpi_22 = st.columns(2)
