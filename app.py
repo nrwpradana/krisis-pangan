@@ -35,7 +35,9 @@ st.markdown(""">*<p style="font-family:Arial; color:Black; font-size: 16px;">\
             Dari 8 bulan sejak dimulainya Konflik <b>Ukraina - Rusia (Februari - Oktober 2022)</b>, banyak dampak signifikan telah diterima di seluruh dunia.\
             Salah satunya adalah <b>krisis pangan global lainnya yang tumpang tindih dengan krisis pangan akibat Covid-19</b>. Hal ini karena kedua peperangan utama memiliki posisi yang signifikan sebagai produsen komoditas terkait pangan.\
             HDi sini saya akan membahas tentang <b>seberapa banyak perubahan yang telah diambil pasar makanan global selama krisis</b>, \
-            dan <b>bagaimana jika dibandingkan</b> dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini <b>Krisis Harga Pangan 2007-2008.</b></p>*""",
+            dan <b>bagaimana jika dibandingkan</b> dengan krisis harga pangan terkenal lainnya selama abad ke-21, yang dalam hal ini <b>Krisis Harga Pangan 2007-2008.</b><br>
+            Berdasarkan hasil analisis data, konflik Ukraina-Rusia 2022 menyebabkan terjadinya krisis pangan dan inflasi harga komoditas pertanian namun\
+            jika dibandikan dengan krisis pangan 2007-2008, krisis pangan saat ini masih lebih rendah. Namun hal ini patut diantisipasi oleh negara lain mengingat diprediksi pada tahun 2023 akan terjadi resesi global.</p>*""",
             unsafe_allow_html=True)
 
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
