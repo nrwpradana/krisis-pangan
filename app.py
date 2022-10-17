@@ -203,8 +203,8 @@ with FAO_inf:
     if fao_by_cat:
         f_ffpi_inf = fs.plot_idx_inf(ffpi_inf, fao_by_cat, "FFPI Inflation Rate 2022 v.s. 2008")
         ffpi_inf_1.plotly_chart(f_ffpi_inf)
-    ffpi_inf_1.caption('Data Source : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/. Accessed on July 2022')
-    ffpi_inf_1.caption('Inflation rate is measured as changes in nominal prices during the 23-month period e.g. Jan 2022 v.s. Jan 2020.')
+    ffpi_inf_1.caption('Sumber : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/.')
+#    ffpi_inf_1.caption('Inflation rate is measured as changes in nominal prices during the 23-month period e.g. Jan 2022 v.s. Jan 2020.')
     # Summary Description
     with ffpi_inf_2:
         st.markdown(p_format+'<br><br><br><b>2022 Inflation rate is substantially lower for FPI, dairy, and cereals compared to 2008. \
@@ -222,7 +222,7 @@ st.markdown('---')
 
 st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise">'+
             'World Bank Commodities Price Data\
-            </h5><br><br>', unsafe_allow_html=True)
+            </h5><br>', unsafe_allow_html=True)
 
 # Read WB Commodity Price Value
 wb_cp_08 = pd.read_csv('data/3b_CMO_food_fert_08.csv')
@@ -230,16 +230,16 @@ wb_cp_08['Date'] = pd.to_datetime(df_08['Date'], format='%d/%m/%Y')
 wb_cp_22 = pd.read_csv('data/3b_CMO_food_fert_22.csv')
 wb_cp_22['Date'] = pd.to_datetime(df_22['Date'], format='%d/%m/%Y')
  
-WB_idx, WB_inf, WB_idx_inf = st.tabs(["📈 Commodity Price (CP)", "🔺 Commodity Price Inflation", "🔶 Commodity Index Inflation"])
+WB_idx, WB_inf, WB_idx_inf = st.tabs(["🎢 Commodity Price (CP)", "🚀 Inflasi Harga Komoditas", "☑️ Index Inflasi Komoditas"])
 
 with WB_idx:
     # Plot WB CP Value
     cp_by_cat = st.radio("BY CATEGORIES :", ['Grains', 'Edible Oils', 'Fertilizers'], horizontal=True) 
     plt_cp_08, plt_cp_22 = st.columns(2)
-    f_cp_08 = fs.plot_wb_cp(wb_cp_08, 'Food Price Crisis (2008) Timeframe', cp_by_cat)
-    f_cp_22 = fs.plot_wb_cp(wb_cp_22, 'Ukraine Crisis (2022) Timeframe', cp_by_cat)
+    f_cp_08 = fs.plot_wb_cp(wb_cp_08, 'Krisis Pangan (2008)', cp_by_cat)
+    f_cp_22 = fs.plot_wb_cp(wb_cp_22, 'Krisis Ukraina-Rusia (2022)', cp_by_cat)
     plt_cp_08.plotly_chart(f_cp_08); plt_cp_22.plotly_chart(f_cp_22)
-    st.caption('Source : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets. Accessed on July 2022')
+    st.caption('Sumber : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets.')
     
     # Summary Description
     st.markdown(p_format+'<b>For grains, the price of wheat, soybean, and maize have reached higher peak than in the 2008 timeframe back in March and slowly stabilizing onwards.</b>\
