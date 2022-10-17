@@ -274,7 +274,7 @@ with WB_idx_inf:
     cp_idx_inf_1, cp_idx_inf_2 = st.columns([7,5])
     f_cp_idx_inf = fs.plot_wb_idx_inf(wb_cp_idx_inf)
     cp_idx_inf_1.plotly_chart(f_cp_idx_inf)
-    st.caption('Source : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets. Accessed on July 2022')
+    st.caption('Sumber : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets.')
     
     # Summary Description
     with cp_idx_inf_2:
