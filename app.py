@@ -235,23 +235,11 @@ with WB_idx:
     st.caption('Sumber : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets.')
     
     # Summary Description
-    st.markdown(p_format+'<b>For grains, the price of wheat, soybean, and maize have reached higher peak than in the 2008 timeframe back in March and slowly stabilizing onwards.</b>\
-        <b>Rice on the other hands is more stable during 2022 crisis</b>, unlike 2008 crisis where it\'s also highly affected alongside other commodities. \
-        Here we can see that distruption of grain supplies from the Black Sea truly affecting global grain prices. We may also exert it to the spike of fertilizers price since maize and wheat are fertilizer-intensive crops.', unsafe_allow_html=True)
-    
-    st.markdown(p_format+'<b>All of edible oil products reach new peak during 2022 timeframe compared to 2008. Currently the price sits at around 15-40% increase since the start of 2022.</b>\
-        Several key factors affecting edible oils price inflation : [2, 3]<br>. \
-        &ensp;&ensp;1. Palm oil production decline from Indonesia & Malaysia amidst Covid-19 pandemic.<br>\
-        &ensp;&ensp;2. Evergrowing biofuel production which ultimately uses palm oil and soybean oil as primary ingredients.<br>\
-        &ensp;&ensp;3. Supply chain distruption from Ukraine & Russia due to ongoing conflict.<br>\
-        &ensp;&ensp;4. Recent drought in Brazil which reduces soybean supply capacity.', unsafe_allow_html=True)
-    
-    st.markdown(p_format+'<b>Continuing uptrend since 2020, fertilizers prices reached its peak during March 2022.</b> \
-        <b>Higher price spike is observed for Urea and Potassium Chloride compared to 2008 crisis</b>, while <b>Phosphate-based fertilizer veils lower than 2008.</b> \
-        Several key factors affecting fertilizers price inflation : [4, 5]<br>\
-        &ensp;&ensp;1. Price increase of natural gas which is one of the main ingredient for Nitrogenous fertilizers.<br>\
-        &ensp;&ensp;2. Economic sanctions which cut off fertilizers trade from Russia and Belarus.<br>\
-        &ensp;&ensp;3. Export restriction from Russia and China to ensure the fulfillment domestic needs first.', unsafe_allow_html=True)
+    st.markdown(p_format+'<b>Untuk biji-bijian, harga gandum, kedelai, dan jagung telah mencapai puncak yang lebih tinggi daripada periode 2008 di bulan Maret</b> dan perlahan-lahan mulai stabil.\
+    Beras di sisi lain lebih stabil selama krisis 2022, tidak seperti krisis 2008 yang juga sangat terpengaruh bersama komoditas lainnya.  \
+    Saya juga dapat menekan lonjakan harga pupuk karena jagung dan gandum adalah tanaman yang membutuhkan pupuk. Semua produk minyak nabati mencapai puncak baru selama jangka waktu 2022 dibandingkan dengan tahun 2008. Saat ini harganya berada pada kenaikan sekitar 15-40% sejak awal tahun 2022.\
+    Harga pupuk mencapai puncaknya selama Maret 2022.<b> Lonjakan harga yang lebih tinggi diamati untuk Urea dan Kalium Klorida dibandingkan krisis 2008,</b> sedangkan selubung pupuk berbasis Fosfat lebih rendah dari 2008.', 
+    unsafe_allow_html=True)
     
 # Read WB CP Inflation Data
 wb_cp_inf = pd.read_csv('data/3b_CMO_food_fert_inflation_08&22.csv')
@@ -260,7 +248,7 @@ with WB_inf:
     cp_cat = ['Palm oil', 'Soybean oil','Rapeseed oil','Sunflower oil',
               'Soybeans', 'Maize', 'Rice', 'Wheat, US',
               'Phosphate rock', 'DAP', 'TSP', 'Urea', 'Potassium chloride']
-    cp_inf_by_cat = st.selectbox("BY CATEGORIES :", cp_cat)
+    cp_inf_by_cat = st.selectbox("BY CATEGORY :", cp_cat)
 
     cp_inf_1, cp_inf_2 = st.columns([6,5])
     if fao_by_cat:
