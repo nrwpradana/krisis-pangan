@@ -258,11 +258,11 @@ with WB_inf:
     
     # Summary Description
     with cp_inf_2:
-        st.markdown(p_format+'<br><br><br><b>Taking a note from rice price data, we can also see that rice prices during 2022 deflate compared to 2020.</b> \
-            <b>Other grains inflation except for wheat also tend to be lower than 2008 crisis, however it\'s still in the range of 50-150% inflation compared to 2020.</b><br><br>\
-            <b>All edible oils inflation rate</b>, except rapeseed oil which rocketed to 200%, <b>have similar profile to 2008 crisis</b>, that is in the realm of 150-200%.<br><br>\
-            <b>As for fertilizers, their inflation rate is kept around 150-300%</b>. Phosphate rock and potassium chloride have similar inflation rate profiles to 2008 crisis. \
-            Urea already reach its 2008 highest peak from the start of the year. <b>DAP and TSP inflation rate is substantially lower than during 2008 crisis.</b>',
+        st.markdown(p_format+'<b>Mencermati data harga beras, kita juga dapat melihat bahwa harga beras selama tahun 2022 mengalami deflasi dibandingkan tahun 2020.</b> \
+        Inflasi biji-bijian lain kecuali gandum juga cenderung lebih rendah dari krisis 2008, namun masih dalam kisaran inflasi 50-150% dibandingkan hingga 2020.<br>\
+        Laju inflasi semua minyak nabati, kecuali minyak lobak yang meroket hingga 200%, memiliki profil yang mirip dengan krisis 2008, yaitu di kisaran 150-200%.<br>\
+        Sedangkan untuk pupuk, laju inflasinya dijaga sekitar 150-300%. Batuan fosfat dan kalium klorida memiliki profil tingkat inflasi yang mirip dengan krisis 2008. Urea sudah mencapai puncak tertinggi 2008 dari awal tahun.\
+        Tingkat inflasi DAP dan TSP jauh lebih rendah dibandingkan saat krisis 2008.',
             unsafe_allow_html=True)
     
 # Read WB Index Inflation Data
