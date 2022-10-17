@@ -187,8 +187,8 @@ FAO_idx, FAO_inf = st.tabs(["🎢 FFPI", "🚀 FFPI Inflasi"])
 with FAO_idx:
     # Plot Index Value
     plt_ffpi_08, plt_ffpi_22 = st.columns(2)
-    f_ffpi_08 = fs.plot_fao_idx(df_08, 'Krisis Pangan (2008)')
-    f_ffpi_22 = fs.plot_fao_idx(df_22, 'Krisis Ukraina-Rusia (2022)')
+    f_ffpi_08 = fs.plot_fao_idx(df_08, '🥖Krisis Pangan (2008)')
+    f_ffpi_22 = fs.plot_fao_idx(df_22, '🇺🇦🇷🇺 Krisis Ukraina-Rusia (2022)')
     st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;"></p>', unsafe_allow_html=True)
     plt_ffpi_08.plotly_chart(f_ffpi_08); plt_ffpi_22.plotly_chart(f_ffpi_22)
     st.caption('Data Source : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/.')
