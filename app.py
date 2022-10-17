@@ -169,7 +169,7 @@ st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#33
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
             'C. Inflasi Harga Komoditas</h2>', unsafe_allow_html=True)
 
-st.markdown(p_format+'<b>FFPI mengukur perubahan bulanan harga internasional beberapa komoditas pangan.</b>\
+st.markdown(p_format+'<br><b>FFPI mengukur perubahan bulanan harga internasional beberapa komoditas pangan.</b>\
             Diukur sebagai rata-rata lima kategori yang dibobot dengan rata-rata pangsa ekspor masing-masing kelompok.',unsafe_allow_html=True)
 # Read FFPI Index Value
 df_08 = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Index_08')
