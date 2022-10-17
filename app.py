@@ -187,25 +187,27 @@ FAO_idx, FAO_inf = st.tabs(["🎢 FFPI", "🚀 FFPI Inflasi"])
 with FAO_idx:
     # Plot Index Value
     plt_ffpi_08, plt_ffpi_22 = st.columns(2)
-    f_ffpi_08 = fs.plot_fao_idx(df_08, '🥖Krisis Pangan (2008)')
-    f_ffpi_22 = fs.plot_fao_idx(df_22, '🇺🇦🇷🇺 Krisis Ukraina-Rusia (2022)')
+    f_ffpi_08 = fs.plot_fao_idx(df_08, 'Krisis Pangan (2008)')
+    f_ffpi_22 = fs.plot_fao_idx(df_22, 'Krisis Ukraina-Rusia (2022)')
     st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;"></p>', unsafe_allow_html=True)
     plt_ffpi_08.plotly_chart(f_ffpi_08); plt_ffpi_22.plotly_chart(f_ffpi_22)
-    st.caption('Data Source : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/.')
+    st.caption('Sumber : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/.')
     # Summary Description
-    st.markdown(p_format+'<b>In general, index values from 2022 timeframe tend to have higher value than its 2008 counterparts for all categories except dairy.</b> \
-                The most <b>drastic difference is from vegetable oils index<b> which at its peak <b>surpasses its 2008 values by 60-90%</b>. \
-                <b>A similar trend</b> also emerges where the index steadily climbs up until around June in the last year (2008, 2022) where it starts to stabilize.',
-                unsafe_allow_html=True)
-    st.markdown(p_format+'<b>Looking at the nominal value, FPI in June 2022 is down to 154 (-2,3%) from the previous month, and has been on down slope from March. However, it\'s still around 23\% more than 2021 value. \
-                Cereals and vegetable oils are also having similar trend</b>, as with both of them are the most affected categories among the five categories. \
-                On the other hands, <b>meat, dairy and sugar</b> is still having an upward trend with substantially lower inflation rate</b> compared to the other two.', 
-                unsafe_allow_html=True)
-    st.markdown(p_format+'International price has been dropping for cereals due to higher wheat availability from northern hemisphere, \
-        higher maize stocks from South America due to harvests progressed ahead of time, which also exerting downward pressure to other grain prices, weakening them as a result. \
-        On the other hands, vegetable oils prices have also declining due to better export prospect of palm oil from Indonesia, \
-        sluggish import demand for sunflower and soybean oil, and upcoming harvest season in general [1].',
-                unsafe_allow_html=True)
+    st.markdown(p_format+'<b>Secara umum, nilai indeks dari jangka waktu 2022 cenderung memiliki nilai yang lebih tinggi daripada tahun 2008 untuk semua kategori</b> kecuali produk susu. \
+    Perbedaan paling drastis adalah dari indeks minyak nabati yang pada puncaknya melampaui nilai 2008 sebesar 60-90%.\
+    Dilihat dari nilai nominalnya, FFPI pada Juni 2022 turun menjadi 154 (-2,3%) dari bulan sebelumnya, dan mulai menurun sejak Maret. Namun, masih sekitar 23% lebih dari nilai 2021. \
+    Sereal dan minyak nabati juga memiliki tren yang sama, karena keduanya adalah kategori yang paling terpengaruh di antara lima kategori.',
+    unsafe_allow_html=True)
+                
+#   st.markdown(p_format+'<b>Looking at the nominal value, FPI in June 2022 is down to 154 (-2,3%) from the previous month, and has been on down slope from March. However, it\'s still around 23\% more than 2021 value. \
+#                Cereals and vegetable oils are also having similar trend</b>, as with both of them are the most affected categories among the five categories. \
+#                On the other hands, <b>meat, dairy and sugar</b> is still having an upward trend with substantially lower inflation rate</b> compared to the other two.', 
+#                unsafe_allow_html=True)
+#    st.markdown(p_format+'International price has been dropping for cereals due to higher wheat availability from northern hemisphere, \
+#        higher maize stocks from South America due to harvests progressed ahead of time, which also exerting downward pressure to other grain prices, weakening them as a result. \
+#        On the other hands, vegetable oils prices have also declining due to better export prospect of palm oil from Indonesia, \
+#        sluggish import demand for sunflower and soybean oil, and upcoming harvest season in general [1].',
+#                unsafe_allow_html=True)
 
 # Plot Index Inflation
 ffpi_inf = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Inflation')
