@@ -132,7 +132,7 @@ import_share_wheat = import_share.sort_values('Wheat_TOT', ascending=True).reset
 import_share_fert  = import_share.sort_values('Fertilizer', ascending=True).reset_index(drop=True)
 
 #Bar Chart for Import Fraction
-with st.expander("Detail Impor"):
+with st.expander("DETAIL IMPOR"):
     filter_11, filter_12 = st.columns(2); st.markdown("---")
     plt_import_wheat, plt_import_fert = st.columns(2)
     
