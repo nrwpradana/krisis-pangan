@@ -287,7 +287,7 @@ st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<str
             ' Section Under Construction \
             </strike>⚙️</h5>', unsafe_allow_html=True)
 
-ua_ina, ru_ina = st.tabs(["Ukraina --> Indonesia", "Rusia --> Indonesia"])
+ua_ina, ru_ina = st.tabs(["Ukraina -> Indonesia", "Rusia -> Indonesia"])
 with ua_ina:
     st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
             ' Section Under Construction \
