@@ -25,7 +25,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
+p_format = '<p style="font-family:Arial; color:Black; font-size: 16px; align=justify">'
 
 st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
             <p style='font-family:Arial; color:Black; font-size: 28px;'>Dibanding dengan Krisis Pangan 2007-2008", unsafe_allow_html=True)
