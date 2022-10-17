@@ -85,7 +85,7 @@ def plot_idx_inf(df, cat, title):
     fig_inf.add_trace(go.Scatter(
             x=df['Month'],
             y=y_08,
-            hovertemplate="<b>%{y:.1f}%</b>", line=dict(color='yellow'),
+            hovertemplate="<b>%{y:.1f}%</b>", line=dict(color='orange'),
             name=slice_08
     ))
     fig_inf.add_trace(go.Scatter(
@@ -112,7 +112,7 @@ def plot_idx_inf(df, cat, title):
 def plot_wb_idx_inf(df):
     df = df.rename(columns={"Food_48m_inflation":"Food Index", "Fertilizer_48m_inflation":"Fertilizers"})
     fig_idx_inf = px.line(df, x='Date', y=df.columns, range_y=[-100, 350],
-                    color_discrete_sequence=['orange', 'mediumblue'])
+                    color_discrete_sequence=['yellow', 'mediumblue'])
     fig_idx_inf.update_layout(
         title_text="<b>World Bank Commodity Price Index Inflation 2000-2022</b>", title_font=dict(size=20),
         xaxis = dict(tickformat='%b %Y', hoverformat='<b>%b %Y</b>'),
