@@ -15,8 +15,8 @@ def plot_import(slice_food, slice_fert):
               color_discrete_sequence=['rgba(146, 114, 24, 1)', 'rgba(234, 241, 60, 1)'],
               template="simple_white", category_orders=slice_food['Country'])
     
-    fig_food.update_layout(legend=dict(y=0.5, xanchor="right", title="Import Source"), title_text="<b>Import Fraction of Wheat from Ukraine & Russia, 2018-2020</b>")
-    fig_food.update_traces(hovertemplate='<b>%{y}</b><br> Import Fraction: %{x:.2f} %<br> Total : %{customdata:.2f} %')
+    fig_food.update_layout(legend=dict(y=0.5, xanchor="right", title="Negara"), title_text="<b>Impor Gandum dari Ukraina $ Rusia 2018-2020</b>")
+    fig_food.update_traces(hovertemplate='<b>%{y}</b><br> Persentase Impor: %{x:.2f} %<br> Total : %{customdata:.2f} %')
     fig_food.update_xaxes(title="<b>Persentase Impor (%)</b>", showgrid=True, linewidth=2, gridcolor='black')
     fig_food.update_yaxes(title=None)
     
@@ -25,8 +25,8 @@ def plot_import(slice_food, slice_fert):
                 color_discrete_sequence=['rgba(18, 16, 199, 1)'],
                 template="simple_white", category_orders=slice_fert['Country'])
     
-    fig_fert.update_layout(title_text="<b>Import Fraction of Fertilizers from Russia, 2018-2020</b>")
-    fig_fert.update_traces(hovertemplate='<b>%{y}</b> <br> Import Fraction: %{x:.2f} %')
+    fig_fert.update_layout(title_text="<b>Impor Pupuk Pertanian dari Rusia 2018-2020</b>")
+    fig_fert.update_traces(hovertemplate='<b>%{y}</b><br> Persentase Impor: %{x:.2f} %')
     fig_fert.update_xaxes(title="<b>Persentase Impor (%)</b>", showgrid=True, linewidth=2, gridcolor='black')
     fig_fert.update_yaxes(title=None)
     
