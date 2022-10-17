@@ -184,3 +184,5 @@ with st.expander("REFERENSI"):
                 unsafe_allow_html=True)  
     st.markdown(p_format+'[4] UN Comtrade. (2022). Free access to detailed global trade data. <a href="https://comtradeplus.un.org/">link</a>.', 
                 unsafe_allow_html=True)  
+    st.markdown(p_format+'[5] World Bank Blog. (2022). Commodity prices surge due to the war in Ukraine. <a href="https://www.worldbank.org/en/news/video/2022/04/05/the-impact-of-the-war-in-ukraine-on-food-security-world-bank-expert-answers">link</a>.', 
+                unsafe_allow_html=True)  
