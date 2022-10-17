@@ -6,6 +6,24 @@ import numpy as np
 
 import plotly.express as px
 import plotly.graph_objects as go
+import base64
+
+
+def tambah_backgroud(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-size: cover
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+
 
 def plot_import(slice_food, slice_fert):
     slice_food = slice_food.rename(columns={"Wheat_UKR":"Ukraine", "Wheat_RUS":"Russia"})
