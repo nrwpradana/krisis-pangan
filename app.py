@@ -296,6 +296,8 @@ with ukraina_1:
     ukraina_string='''
     <div style='width: 100%;height: 400px ;'><iframe class='embed-responsive-item' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=' style='border:none; scrolling='no''></iframe></div>
     '''
+    components.html(ukraina_string,height=430)
+    
 with rusia_1:    
      st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
             'Rusia merupakan eksportir pupuk pertanian seperti<br>Potassium, Phospate dan Nitrogen.\
