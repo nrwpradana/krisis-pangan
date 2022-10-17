@@ -287,9 +287,7 @@ st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
 st.markdown('<h5 style="font-family:Papyrus; background-color: white">'+
             'Konflik Ukraina-Rusia memberikan dampak yang besar bagi pasokan bahan pangan dan pertanian global, termasuk dengan Indonesia yang memiliki hubungan perdagangan dengan Ukraina dan Rusia. \
             </h5>', unsafe_allow_html=True)
-st.markdown(""">*<h5 style="font-family:Papyrus; background-color: white">
-            'Konflik Ukraina-Rusia memberikan dampak yang besar bagi pasokan bahan pangan dan pertanian global, termasuk dengan Indonesia yang memiliki hubungan perdagangan dengan Ukraina dan Rusia. \
-            </h5>*""", unsafe_allow_html=True)
+st.markdown("""><h5 style="font-family:Papyrus; background-color: white"><b>Seberapa besar ketergantungan Indonesia terhadap pasokan bahan pangan dan pertanian dari Ukraina dan Rusia ?</b></h5>""", unsafe_allow_html=True)
 ua_ina, ru_ina = st.tabs(["Ukraina -> Indonesia", "Rusia -> Indonesia"])
 with ua_ina:
     st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
