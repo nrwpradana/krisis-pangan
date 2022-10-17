@@ -163,7 +163,9 @@ with st.expander("Detail Impor"):
                &ensp;\*\* Missing data for fertilizers import')
 st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#333;" /> """, unsafe_allow_html=True)
 
-st.header("C. Kesimpulan")
+#st.header("C. Kesimpulan")
+st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
+            'C. Kesimpulan</h2>', unsafe_allow_html=True)
 
 st.markdown(p_format+'<b> Kesimpulan sementara yaitu konflik Rusia-Ukraina dapat menyebabkan krisis pangan dunia. </b>', 
     unsafe_allow_html=True)
