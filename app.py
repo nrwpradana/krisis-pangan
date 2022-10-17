@@ -278,8 +278,7 @@ with WB_idx_inf:
     
     # Summary Description
     with cp_idx_inf_2:
-        st.markdown('<p style="font-family:Arial; color:Black; font-size: 24px;">'+'<br><br><br> \
-            Looking at food and fertilizers price inflation during the 21st century, the current price spike ranks second to 2007-2008 food price crisis and only third after 1974 global recession.',
+        st.markdown(p_format+'<b>Melihat inflasi harga pangan dan pupuk selama abad ke-21, lonjakan harga saat ini menempati urutan kedua setelah krisis harga pangan 2007-2008</b> dan hanya ketiga setelah resesi global 1974.',
             unsafe_allow_html=True)
 
 
