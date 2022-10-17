@@ -15,7 +15,7 @@ def plot_import(slice_food, slice_fert):
               color_discrete_sequence=['rgba(146, 114, 24, 1)', 'rgba(234, 241, 60, 1)'],
               template="simple_white", category_orders=slice_food['Country'])
     
-    fig_food.update_layout(legend=dict(y=0.5, xanchor="right", title="Negara"), title_text="<b>Impor Gandum dari Ukraina $ Rusia 2018-2020</b>")
+    fig_food.update_layout(legend=dict(y=0.5, xanchor="right", title="Negara"), title_text="<b>Impor Gandum dari Ukraina & Rusia 2018-2020</b>")
     fig_food.update_traces(hovertemplate='<b>%{y}</b><br> Persentase Impor: %{x:.2f} %<br> Total : %{customdata:.2f} %')
     fig_food.update_xaxes(title="<b>Persentase Impor (%)</b>", showgrid=True, linewidth=2, gridcolor='black')
     fig_food.update_yaxes(title=None)
