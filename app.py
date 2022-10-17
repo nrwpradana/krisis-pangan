@@ -25,7 +25,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-tambah_backgroud("data/bg.png")
+tambah_backgroud(data/bg.png)
 
 p_format = '<p style="font-family:Arial; color:Black; font-size: 16px;">'
 
