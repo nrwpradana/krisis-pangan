@@ -213,8 +213,8 @@ with FAO_inf:
 
 st.markdown('---')
 
-st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise"><i>'+
-            '💰 World Bank Commodities Price Data\
+st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise">💰<i>'+
+            ' World Bank Commodities Price Data\
             </i></h5><br>', unsafe_allow_html=True)
 
 # Read WB Commodity Price Value
