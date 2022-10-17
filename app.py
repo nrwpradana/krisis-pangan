@@ -287,22 +287,16 @@ st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<str
             ' Section Under Construction \
             </strike>⚙️</h5>', unsafe_allow_html=True)
 
+ua_ina, ru_ina = st.tabs(["Ukraina --> Indonesia", "Rusia --> Indonesia"])
+with ua_ina:
+    st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
+            ' Section Under Construction \
+            </strike>⚙️</h5>', unsafe_allow_html=True)
 
-ukraina_1, rusia_1 = st.columns(2)
-with ukraina_1:
-    st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
-            'Ukraina dan Rusia merupakan eksportir penting untuk Indonesia.\
-            </h5>', unsafe_allow_html=True)
-    ukraina_string='''
-    <div style='width: 100%;height: 100% ;'><iframe class='embed-responsive-item' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=' style='border:none; scrolling='no''></iframe></div>
-    '''
-    components.html(ukraina_string)
-    
-with rusia_1:    
-     st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
-            'Rusia merupakan eksportir pupuk pertanian seperti<br>Potassium, Phospate dan Nitrogen.\
-            </h5>', unsafe_allow_html=True)
-st.markdown("---") 
+with ru_ina:
+    st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
+            ' Section Under Construction \
+            </strike>⚙️</h5>', unsafe_allow_html=True)
 
 
 # BAGIAN E
