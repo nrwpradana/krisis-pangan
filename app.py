@@ -175,23 +175,23 @@ col_211, col_212, padding_21 = st.columns([1,5,5])
 #with col_212:
 #    st.info("### FAO Food Price Index (FFPI)")
 
-st.markdown(p_format+'FFPI measures the <b>monthly change in international prices of several food commodities.</b>\
-            It\'s measured as the average of five categories weighted by the average export shares of each groups over 2014-2016.',unsafe_allow_html=True)
+st.markdown(p_format+'<b>FFPI mengukur perubahan bulanan harga internasional beberapa komoditas pangan.</b>\
+            Diukur sebagai rata-rata lima kategori yang dibobot dengan rata-rata pangsa ekspor masing-masing kelompok.',unsafe_allow_html=True)
 # Read FFPI Index Value
 df_08 = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Index_08')
 df_08['Date'] = pd.to_datetime(df_08['Date'], format='%d/%m/%Y')
 df_22 = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Index_22')
 df_22['Date'] = pd.to_datetime(df_22['Date'], format='%d/%m/%Y')
 
-FAO_idx, FAO_inf = st.tabs(["📈 FFPI", "🔺 FFPI Inflation"])
+FAO_idx, FAO_inf = st.tabs(["📈 FFPI", "🔺 FFPI Inflasi"])
 with FAO_idx:
     # Plot Index Value
     plt_ffpi_08, plt_ffpi_22 = st.columns(2)
-    f_ffpi_08 = fs.plot_fao_idx(df_08, 'Food Price Crisis (2008) Timeframe')
-    f_ffpi_22 = fs.plot_fao_idx(df_22, 'Ukraine Crisis (2022) Timeframe')
-    st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;"><b>Note : 2014-2016 = 100</b></p>', unsafe_allow_html=True)
+    f_ffpi_08 = fs.plot_fao_idx(df_08, 'Krisis Pangan (2008)')
+    f_ffpi_22 = fs.plot_fao_idx(df_22, 'Krisis Ukraina-Rusia (2022)')
+    st.markdown('<p style="font-family:Arial; color:Black; font-size: 16px;"></p>', unsafe_allow_html=True)
     plt_ffpi_08.plotly_chart(f_ffpi_08); plt_ffpi_22.plotly_chart(f_ffpi_22)
-    st.caption('Data Source : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/. Accessed on July 2022')
+    st.caption('Data Source : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/.')
     # Summary Description
     st.markdown(p_format+'<b>In general, index values from 2022 timeframe tend to have higher value than its 2008 counterparts for all categories except dairy.</b> \
                 The most <b>drastic difference is from vegetable oils index<b> which at its peak <b>surpasses its 2008 values by 60-90%</b>. \
