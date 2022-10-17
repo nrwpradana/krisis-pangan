@@ -182,3 +182,5 @@ with st.expander("REFERENSI"):
                 unsafe_allow_html=True) 
     st.markdown(p_format+'[3] The World Bank. (2022). The impact of the war in Ukraine on commodity markets. <a href="https://www.worldbank.org/en/research/commodity-markets">link</a>.', 
                 unsafe_allow_html=True)  
+    st.markdown(p_format+'[4] UN Comtrade. (2022). Free access to detailed global trade data. <a href="https://comtradeplus.un.org/">link</a>.', 
+                unsafe_allow_html=True)  
