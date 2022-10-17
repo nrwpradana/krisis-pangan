@@ -198,31 +198,24 @@ with FAO_idx:
 ffpi_inf = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Inflation')
 with FAO_inf:
     fao_cat = ['Food Price Index', 'Meat', 'Dairy', 'Cereals', 'Edible Oils', 'Sugar']
-    fao_by_cat = st.radio("BY CATEGORIES :", fao_cat, horizontal=True) 
+    fao_by_cat = st.radio("BY CATEGORY :", fao_cat, horizontal=True) 
     ffpi_inf_1, ffpi_inf_2 = st.columns([6,5])
     if fao_by_cat:
         f_ffpi_inf = fs.plot_idx_inf(ffpi_inf, fao_by_cat, "FFPI Inflation Rate 2022 v.s. 2008")
         ffpi_inf_1.plotly_chart(f_ffpi_inf)
     ffpi_inf_1.caption('Sumber : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/.')
-#    ffpi_inf_1.caption('Inflation rate is measured as changes in nominal prices during the 23-month period e.g. Jan 2022 v.s. Jan 2020.')
+#   ffpi_inf_1.caption('Inflation rate is measured as changes in nominal prices during the 23-month period e.g. Jan 2022 v.s. Jan 2020.')
     # Summary Description
     with ffpi_inf_2:
-        st.markdown(p_format+'<br><br><br><b>2022 Inflation rate is substantially lower for FPI, dairy, and cereals compared to 2008. \
-            Lower value may be attibuted to higher food prices in 2020 due to Covid-19 whereas 2006 is more stable.</b><br><br> \
-            However <b>edible oils and sugar 2022 receives higher inflation rate</b> which may be because the market for these two categories is <b>more volatile due to fast development of biofuels</b>, \
-            which takes on share of which edible oils and sugar used upon. Lastly meat index inflation has similar values between crisis.',
-            unsafe_allow_html=True)
+        st.markdown(p_format+'<br><br><br><b>Tingkat inflasi 2022 secara substansial lebih rendah untuk Food Price Index (FPI)</b>, produk susu, dan sereal dibandingkan dengan tahun 2008. \
+        Nilai yang lebih rendah mungkin disebabkan oleh harga pangan yang lebih tinggi pada tahun 2020 karena Covid-19 sedangkan tahun 2006 lebih stabil.',
+        unsafe_allow_html=True)
 
 st.markdown('---')
-#col_221, col_222, padding_22 = st.columns([1,5,5])
-#with col_221:
-#    st.image("https://brandlogos.net/wp-content/uploads/2021/12/world_bank-brandlogo.net_.png", width=100)
-#with col_222:
-#    st.info("### World Bank Commodities Price Data")
 
-st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise">'+
+st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise"><i>'+
             'World Bank Commodities Price Data\
-            </h5><br>', unsafe_allow_html=True)
+            </i></h5><br>', unsafe_allow_html=True)
 
 # Read WB Commodity Price Value
 wb_cp_08 = pd.read_csv('data/3b_CMO_food_fert_08.csv')
@@ -234,7 +227,7 @@ WB_idx, WB_inf, WB_idx_inf = st.tabs(["🎢 Commodity Price (CP)", "🚀 Inflasi
 
 with WB_idx:
     # Plot WB CP Value
-    cp_by_cat = st.radio("BY CATEGORIES :", ['Grains', 'Edible Oils', 'Fertilizers'], horizontal=True) 
+    cp_by_cat = st.radio("BY CATEGORY :", ['Grains', 'Edible Oils', 'Fertilizers'], horizontal=True) 
     plt_cp_08, plt_cp_22 = st.columns(2)
     f_cp_08 = fs.plot_wb_cp(wb_cp_08, 'Krisis Pangan (2008)', cp_by_cat)
     f_cp_22 = fs.plot_wb_cp(wb_cp_22, 'Krisis Ukraina-Rusia (2022)', cp_by_cat)
