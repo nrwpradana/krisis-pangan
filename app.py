@@ -258,9 +258,9 @@ with WB_inf:
     
     # Summary Description
     with cp_inf_2:
-        st.markdown(p_format+'<b>Mencermati data harga beras, kita juga dapat melihat bahwa harga beras selama tahun 2022 mengalami deflasi dibandingkan tahun 2020.</b> \
-        Inflasi biji-bijian lain kecuali gandum juga cenderung lebih rendah dari krisis 2008, namun masih dalam kisaran inflasi 50-150% dibandingkan hingga 2020.<br>\
-        Laju inflasi semua minyak nabati, kecuali minyak lobak yang meroket hingga 200%, memiliki profil yang mirip dengan krisis 2008, yaitu di kisaran 150-200%.<br>\
+        st.markdown(p_format+'<br><br><br><b>Mencermati data harga beras, kita juga dapat melihat bahwa harga beras selama tahun 2022 mengalami deflasi dibandingkan tahun 2020.</b> \
+        Inflasi biji-bijian lain kecuali gandum juga cenderung lebih rendah dari krisis 2008, namun masih dalam kisaran inflasi 50-150% dibandingkan hingga 2020.<br><br>\
+        Laju inflasi semua minyak nabati, kecuali minyak lobak yang meroket hingga 200%, memiliki profil yang mirip dengan krisis 2008, yaitu di kisaran 150-200%.<br><br>\
         Sedangkan untuk pupuk, laju inflasinya dijaga sekitar 150-300%. Batuan fosfat dan kalium klorida memiliki profil tingkat inflasi yang mirip dengan krisis 2008. Urea sudah mencapai puncak tertinggi 2008 dari awal tahun.\
         Tingkat inflasi DAP dan TSP jauh lebih rendah dibandingkan saat krisis 2008.',
             unsafe_allow_html=True)
