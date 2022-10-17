@@ -169,12 +169,6 @@ st.markdown("""<hr style="height:4px;border:none;color:#333;background-color:#33
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
             'C. Inflasi Harga Komoditas</h2>', unsafe_allow_html=True)
 
-col_211, col_212, padding_21 = st.columns([1,5,5])
-#with col_211:
-#    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/FAO_logo.svg/800px-FAO_logo.svg.png", width=100)
-#with col_212:
-#    st.info("### FAO Food Price Index (FFPI)")
-
 st.markdown(p_format+'<b>FFPI mengukur perubahan bulanan harga internasional beberapa komoditas pangan.</b>\
             Diukur sebagai rata-rata lima kategori yang dibobot dengan rata-rata pangsa ekspor masing-masing kelompok.',unsafe_allow_html=True)
 # Read FFPI Index Value
@@ -199,15 +193,6 @@ with FAO_idx:
     Sereal dan minyak nabati juga memiliki tren yang sama, karena keduanya adalah kategori yang paling terpengaruh di antara lima kategori.',
     unsafe_allow_html=True)
                 
-#   st.markdown(p_format+'<b>Looking at the nominal value, FPI in June 2022 is down to 154 (-2,3%) from the previous month, and has been on down slope from March. However, it\'s still around 23\% more than 2021 value. \
-#                Cereals and vegetable oils are also having similar trend</b>, as with both of them are the most affected categories among the five categories. \
-#                On the other hands, <b>meat, dairy and sugar</b> is still having an upward trend with substantially lower inflation rate</b> compared to the other two.', 
-#                unsafe_allow_html=True)
-#    st.markdown(p_format+'International price has been dropping for cereals due to higher wheat availability from northern hemisphere, \
-#        higher maize stocks from South America due to harvests progressed ahead of time, which also exerting downward pressure to other grain prices, weakening them as a result. \
-#        On the other hands, vegetable oils prices have also declining due to better export prospect of palm oil from Indonesia, \
-#        sluggish import demand for sunflower and soybean oil, and upcoming harvest season in general [1].',
-#                unsafe_allow_html=True)
 
 # Plot Index Inflation
 ffpi_inf = pd.read_excel('data/3a_FAO_FPPI.xlsx', sheet_name='Inflation')
@@ -228,15 +213,16 @@ with FAO_inf:
             which takes on share of which edible oils and sugar used upon. Lastly meat index inflation has similar values between crisis.',
             unsafe_allow_html=True)
 
-#-------------------------------------------
-# SECTION 2.2 : WB Commodity Price
-#-------------------------------------------
 st.markdown('---')
-col_221, col_222, padding_22 = st.columns([1,5,5])
-with col_221:
-    st.image("https://brandlogos.net/wp-content/uploads/2021/12/world_bank-brandlogo.net_.png", width=100)
-with col_222:
-    st.info("### World Bank Commodities Price Data")
+#col_221, col_222, padding_22 = st.columns([1,5,5])
+#with col_221:
+#    st.image("https://brandlogos.net/wp-content/uploads/2021/12/world_bank-brandlogo.net_.png", width=100)
+#with col_222:
+#    st.info("### World Bank Commodities Price Data")
+
+st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise">'+
+            'World Bank Commodities Price Data\
+            </h5>', unsafe_allow_html=True)
 
 # Read WB Commodity Price Value
 wb_cp_08 = pd.read_csv('data/3b_CMO_food_fert_08.csv')
