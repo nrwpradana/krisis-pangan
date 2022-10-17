@@ -204,7 +204,6 @@ with FAO_inf:
         f_ffpi_inf = fs.plot_idx_inf(ffpi_inf, fao_by_cat, "FFPI Inflation Rate 2022 v.s. 2008")
         ffpi_inf_1.plotly_chart(f_ffpi_inf)
     ffpi_inf_1.caption('Sumber : FAO, https://www.fao.org/worldfoodsituation/foodpricesindex/.')
-#   ffpi_inf_1.caption('Inflation rate is measured as changes in nominal prices during the 23-month period e.g. Jan 2022 v.s. Jan 2020.')
     # Summary Description
     with ffpi_inf_2:
         st.markdown(p_format+'<br><br><br><b>Tingkat inflasi 2022 secara substansial lebih rendah untuk Food Price Index (FPI)</b>, produk susu dan sereal dibandingkan dengan tahun 2008. \
@@ -234,7 +233,6 @@ with WB_idx:
     plt_cp_08.plotly_chart(f_cp_08); plt_cp_22.plotly_chart(f_cp_22)
     st.caption('Sumber : World Bank Commodities Price Data, https://www.worldbank.org/en/research/commodity-markets.')
     
-    # Summary Description
     st.markdown(p_format+'<b>Untuk biji-bijian, harga gandum, kedelai, dan jagung telah mencapai puncak yang lebih tinggi daripada periode 2008 di bulan Maret</b> dan perlahan-lahan mulai stabil.\
     Beras di sisi lain lebih stabil selama krisis 2022, tidak seperti krisis 2008 yang juga sangat terpengaruh bersama komoditas lainnya.  \
     Saya juga dapat menekan lonjakan harga pupuk karena jagung dan gandum adalah tanaman yang membutuhkan pupuk. Semua produk minyak nabati mencapai puncak baru selama jangka waktu 2022 dibandingkan dengan tahun 2008. Saat ini harganya berada pada kenaikan sekitar 15-40% sejak awal tahun 2022.\
@@ -288,6 +286,22 @@ st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
 st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
             ' Section Under Construction \
             </strike>⚙️</h5>', unsafe_allow_html=True)
+
+
+ukraina_1, rusia_1 = st.columns(2)
+with ukraina_1:
+    st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
+            'Ukraina dan Rusia merupakan eksportir penting untuk Indonesia.\
+            </h5>', unsafe_allow_html=True)
+    ukraina_string='''
+    <div style='width: 100%;height: 400px ;'><iframe class='embed-responsive-item' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=' style='border:none; scrolling='no''></iframe></div>
+    '''
+with rusia_1:    
+     st.markdown('<h5 style="font-family:Arial; background-color: white"><br>'+\
+            'Rusia merupakan eksportir pupuk pertanian seperti<br>Potassium, Phospate dan Nitrogen.\
+            </h5>', unsafe_allow_html=True)
+st.markdown("---") 
+
 
 # BAGIAN E
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
