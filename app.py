@@ -304,9 +304,9 @@ with ru_ina:
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
             'E. Kesimpulan</h2>', unsafe_allow_html=True)
 
-st.markdown(p_format+'<br><b>Konflik Ukraina-Rusia memiliki dampak yang hampir sama besarnya dengan krisis harga pangan penting sebelumnya seperti Krisis Pangan 2007-2008 di pasar pangan pertanian global</b>,\
+st.markdown(p_format+""">*<br><b>Konflik Ukraina-Rusia memiliki dampak yang hampir sama besarnya dengan krisis harga pangan penting sebelumnya seperti Krisis Pangan 2007-2008 di pasar pangan pertanian global</b>,\
 melihatnya dari rekor dan lonjakan harga komoditas yang hampir memecahkan rekor. Hal ini dapat terjadi karena Ukraina dan Rusia merupakan pemain penting dalam lingkungan tersebut, \
-ditambah lagi dengan pasar yang sudah bergejolak saat ini karena pandemi Covid-19 yang belum sepenuhnya teratasi. ', 
+ditambah lagi dengan pasar yang sudah bergejolak saat ini karena pandemi Covid-19 yang belum sepenuhnya teratasi.*""", 
     unsafe_allow_html=True)
 st.markdown("---") 
 
