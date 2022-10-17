@@ -285,7 +285,11 @@ with WB_idx_inf:
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
             'D. Bagaimana Dengan Indonesia ?</h2>', unsafe_allow_html=True)
 
+st.markdown('⚙️<h5 style="font-family:Papyrus; background-color: white"><strike>'+
+            'Section Under Construction\
+            </strike></h5>⚙️', unsafe_allow_html=True)
 
+# BAGIAN E
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
             'E. Kesimpulan</h2>', unsafe_allow_html=True)
 
