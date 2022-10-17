@@ -19,7 +19,6 @@ st.markdown(
 <style>
 .streamlit-expanderHeader {
     font-size: large;
-    background-image: url('data/bg.png');
 }
 </style>
 """,
