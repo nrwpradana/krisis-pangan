@@ -222,7 +222,7 @@ st.markdown('---')
 
 st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise">'+
             'World Bank Commodities Price Data\
-            </h5>', unsafe_allow_html=True)
+            <br></h5>', unsafe_allow_html=True)
 
 # Read WB Commodity Price Value
 wb_cp_08 = pd.read_csv('data/3b_CMO_food_fert_08.csv')
