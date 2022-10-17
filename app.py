@@ -19,10 +19,8 @@ st.markdown(
 <style>
 .streamlit-expanderHeader {
     font-size: large;
-}
-p {
     background-image: url('data/bg.png');
-    }
+}
 </style>
 """,
     unsafe_allow_html=True,
