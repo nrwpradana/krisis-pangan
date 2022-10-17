@@ -170,10 +170,11 @@ st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
             'C. Inflasi Harga Komoditas</h2>', unsafe_allow_html=True)
 
 col_211, col_212, padding_21 = st.columns([1,5,5])
-with col_211:
-    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/FAO_logo.svg/800px-FAO_logo.svg.png", width=100)
-with col_212:
-    st.info("### FAO Food Price Index (FFPI)")
+#with col_211:
+#    st.image("https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/FAO_logo.svg/800px-FAO_logo.svg.png", width=100)
+#with col_212:
+#    st.info("### FAO Food Price Index (FFPI)")
+
 st.markdown(p_format+'FFPI measures the <b>monthly change in international prices of several food commodities.</b>\
             It\'s measured as the average of five categories weighted by the average export shares of each groups over 2014-2016.',unsafe_allow_html=True)
 # Read FFPI Index Value
