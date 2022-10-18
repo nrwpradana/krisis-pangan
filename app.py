@@ -293,9 +293,9 @@ with ua_ina:
             ' Section Under Construction \
             </strike>⚙️</h5>', unsafe_allow_html=True)
 ukraina_string = """
-<div style='width: 1000px;height: 400px ;'><iframe class='embed-responsive-item' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=' style='border:none; scrolling='no''></iframe></div>
+<div style='width: 100%;height: 100% ;'><iframe class='embed-responsive-item' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=' style='border:none; scrolling='no''></iframe></div>
 """
-components.html(ukraina_string)
+components.html(ukraina_string, height=300, width=400)
 
 with ru_ina:
     st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
