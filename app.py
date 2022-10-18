@@ -119,10 +119,10 @@ st.markdown('<h5 style="font-family:Papyrus; background-color: paleturquoise"><i
 #st.markdown('#### Observasi 75 negara non-Eropa yang dianggap negara berkembang dan kurang berkembang*:')
 import_1, import_2 = st.columns(2)
 with import_1:
-    st.markdown("# 🍞 xx,xx%")
+    st.markdown("# 🍞 46.7%")
     st.markdown(p_format+'<b>Memiliki ketergantungan terhadap impor pangan pertanian dari Ukraina-Rusia</b>', unsafe_allow_html=True)
 with import_2:
-    st.markdown("# 🥡 xx,xx%")
+    st.markdown("# 🥡 22.7%")
     st.markdown(p_format+'<b>Memiliki ketergantungan pupuk pertanian dari Rusia</b>', unsafe_allow_html=True)
 st.caption("\* Berdasarkan \"Special Region\" group dari FAOSTAT")
 #st.caption("\** Import proportion >25%")
