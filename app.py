@@ -292,7 +292,8 @@ with ua_ina:
     ukraina_string = """
     <iframe class='embed-responsive-item' width='100%' height='400px' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=Ekspor Global Ukraina' style='border:none; scrolling='no''></iframe>
     """
-    components.html(ukraina_string,height=430)
+    components.html(ukraina_string,height=410)
+    st.caption('Sumber : Ukraine Exports By Country, https://tradingeconomics.com/ukraine/exports-by-country.')
 
 with ru_ina:
     st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
