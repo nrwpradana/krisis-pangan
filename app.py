@@ -338,7 +338,7 @@ st.markdown(p_format+'<br><b>Konflik Ukraina-Rusia memiliki dampak yang hampir s
 melihatnya dari rekor dan lonjakan harga komoditas yang hampir memecahkan rekor. Hal ini dapat terjadi karena Ukraina dan Rusia merupakan pemain penting dalam lingkungan tersebut, \
 ditambah lagi dengan pasar yang sudah bergejolak saat ini karena pandemi Covid-19 yang belum sepenuhnya teratasi. ', 
     unsafe_allow_html=True)
-st.markdown("""><h6 style="font-family:Papyrus; background-color: limeblue"><b><i>Seberapa besar ketergantungan Indonesia terhadap pasokan bahan pangan dan pertanian dari Ukraina dan Rusia ?🌾🌾</i></b></h6>""", unsafe_allow_html=True)
+st.markdown("""><h6 style="font-family:Papyrus; background-color: limeblue"><b>Lalu bagaimana dampaknya ke Indonesia ? </b></h6>""", unsafe_allow_html=True)
 st.markdown("---") 
 
 
