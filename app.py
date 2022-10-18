@@ -289,9 +289,6 @@ st.markdown(p_format+'<br>Konflik Ukraina-Rusia memberikan dampak yang besar bag
 st.markdown("""><h5 style="font-family:Papyrus; background-color: white"><b><i>Seberapa besar ketergantungan Indonesia terhadap pasokan bahan pangan dan pertanian dari Ukraina dan Rusia ?🌾🌾</i></b></h5>""", unsafe_allow_html=True)
 ua_ina, ru_ina = st.tabs(["Ukraina > Indonesia", "Rusia > Indonesia"])
 with ua_ina:
-    st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
-            ' Section Under Construction \
-            </strike>⚙️</h5>', unsafe_allow_html=True)
     ukraina_string = """
     <iframe class='embed-responsive-item' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=Ekspor Ukraina' style='border:none; scrolling='no';min-width: 100%;height="400"'></iframe></div>
     """
