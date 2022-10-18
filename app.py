@@ -316,6 +316,11 @@ with ru_ina:
     components.html(rusia_string,height=405)
     st.caption('Sumber : Russia Exports By Country, https://tradingeconomics.com/russia/exports-by-country.')
 
+    st.markdown(p_format+'Berdasarkan data ekspor negara Rusia dapat diketahui jika Indonesia merupakan salah satu negara tujuan ekspor dari Rusia namun dengan persentase yang kecil. \
+    <b> Indonesia bergantung pada ekspor dari Ukraina sebesar 0,14% total ekspor Rusia</b>. Dengan adanya konflik antara Ukraina dan Rusia secara tidak langsung akan \
+    menyebabkan rantai pasok pangan dari Ukraina ke Indonesia terganggu.<br>', 
+    unsafe_allow_html=True)
+
     with st.expander("DETAIL EKSPOR RUSIA KE INDONESIA 2021"):
         st.markdown("---")
         rus_ina_chart = """
