@@ -279,7 +279,7 @@ with WB_idx_inf:
     with cp_idx_inf_2:
         st.markdown(p_format+'<br><br><br><br><br><b>Melihat inflasi harga pangan dan pupuk selama abad ke-21, lonjakan harga saat ini menempati urutan kedua setelah krisis harga pangan 2007-2008</b> dan hanya ketiga setelah resesi global 1974.',
             unsafe_allow_html=True)
-
+st.markdown("---")
 
 # BAGIAN D
 st.markdown('<h2 style="font-family:Arial;background-color: skyblue">'+
@@ -338,7 +338,7 @@ st.markdown(p_format+'<br><b>Konflik Ukraina-Rusia memiliki dampak yang hampir s
 melihatnya dari rekor dan lonjakan harga komoditas yang hampir memecahkan rekor. Hal ini dapat terjadi karena Ukraina dan Rusia merupakan pemain penting dalam lingkungan tersebut, \
 ditambah lagi dengan pasar yang sudah bergejolak saat ini karena pandemi Covid-19 yang belum sepenuhnya teratasi. ', 
     unsafe_allow_html=True)
-st.markdown("""><h6 style="font-family:Papyrus"><b>Lalu bagaimana dampak konflik Ukraina-Rusia ke Indonesia ? </b></h6>""", unsafe_allow_html=True)
+st.markdown("""><h5 style="font-family:Papyrus; background-color: indianred"><b>Lalu bagaimana dampak konflik Ukraina-Rusia ke Indonesia ? </b></h5>""", unsafe_allow_html=True)
 st.markdown(p_format+'Berdasarkan data yang digunakan menunjukkan bahwa Indonesia memiliki ketergantungan terhadap komoditas ekspor dari Ukraina dan Rusia. \
 <b>Total nilai ekspor Ukraina ke Indonesia lebih besar dibandingkan dengan nilai ekspor Rusia ke Indonesia</b>, yang mana nilai ekspor Ukraina ke Indonesia sebesar 735 Juta USD sedangkan nilai ekspor Rusia ke Indonesia sebesar 681 Juta USD. \
 Komoditas ekspor dari Ukraina didominasi oleh ekspor Cereals sedangkan komoditas ekspor dari Rusia didominasi oleh pupuk pertanian. \
