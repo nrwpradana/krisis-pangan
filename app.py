@@ -301,7 +301,7 @@ with ua_ina:
     unsafe_allow_html=True)
 
     ua_ina = pd.read_csv("data/export_ua_ina", sep=";")
-    fig1 = px.bar(exp_food, y="Exports_to_Indonesia", x="Value", orientation='h', 
+    fig1 = px.bar(ua_ina, y="Exports_to_Indonesia", x="Value", orientation='h', 
               range_x=[0,50], width=600, height=300,
               color_discrete_sequence=['rgba(255,244,51,0.8)', 'rgba(37,58,255,0.8)'],
               template="simple_white")
