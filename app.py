@@ -300,11 +300,6 @@ with ua_ina:
     menyebabkan rantai pasok pangan dari Ukraina ke Indonesia terganggu.<br>', 
     unsafe_allow_html=True)
 
-    ua_ina = pd.read_csv("data/export_ua_ina.csv", sep=";")
-    st.bar_chart(data=ua_ina,x='Value', y='Exports_to_Indonesia', width=0, height=0, use_container_width=True)
-    st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
-
-
 with ru_ina:
     st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
             ' Section Under Construction \
