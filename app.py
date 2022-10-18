@@ -306,7 +306,7 @@ with ua_ina:
         <iframe  align='center' width='200%' height='500' frameborder='0' style='padding:10px 0;' src='https://wits.worldbank.org/en/Widget/Chart/Country/UKR/Year/2020/TradeFlow/Export/Partner/IDN/Product/all-groups'; scroll='no'></iframe>
         """
         components.html(ua_ina_chart,height=550)
-        st.caption('Sumber : Ukraine Product Exports to Indonesia 2020, https://wits.worldbank.org')
+        #st.caption('Sumber : Ukraine Product Exports to Indonesia 2020, https://wits.worldbank.org')
 
 
 with ru_ina:
