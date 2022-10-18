@@ -13,7 +13,7 @@ import plotly.express as px
 import plotly.graph_objects as go
 import streamlit.components.v1 as components
 from PIL import Image
-st.set_page_config(page_title='Krisis Pangan', page_icon = "🍔", layout = 'wide', initial_sidebar_state = 'auto')
+st.set_page_config(page_title='Krisis Pangan Akibat Konflik Ukraina-Rusia', page_icon = "🍔", layout = 'wide', initial_sidebar_state = 'auto')
 st.markdown(
     """
 <style>
