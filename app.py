@@ -25,7 +25,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-p_format = '<p style="font-family:Arial; color:Black; font-size: 16px; align=justify">'
+p_format = '<p style="font-family:Arial; color:Black; font-size: 16px; text-align: justify">'
 
 st.markdown("# Benarkah Konflik Ukraina dan Rusia Menyebabkan Krisis Pangan ?<br />\
             <p style='font-family:Arial; color:Black; font-size: 28px;'>Dibanding dengan Krisis Pangan 2007-2008", unsafe_allow_html=True)
@@ -344,7 +344,7 @@ st.markdown(p_format+'Berdasarkan data yang digunakan menunjukkan bahwa Indonesi
 Komoditas ekspor dari Ukraina didominasi oleh ekspor Cereals sedangkan komoditas ekspor dari Rusia didominasi oleh pupuk pertanian. \
 Dengan adanya ketegangan akibat konflik Rusia dan Ukraina yang bergulir sejak Februari 2022 mengakibatkan instabilitas di sektor ekonomi, bahkan memicu kenaikan harga sejumlah komoditas. \
 Konflik Ukraina-Rusia yang berkepanjangan bisa berdampak besar kepada Indonesia mulai dari kenaikan harga makanan, minyak mentah pupuk, hingga hilangnya potensi ekspor. \
-Momentum Presidensi G20 dapat dimanfaatkan oleh Indonesia dan negara lainnya untuk dapat menghentikan konflik Ukraina-Rusia mengingat pada tahun 2023 diprediksi akan terjadi resesi global.', 
+<b>Momentum Presidensi G20 dapat dimanfaatkan oleh Indonesia dan negara lainnya untuk dapat menghentikan konflik Ukraina-Rusia mengingat pada tahun 2023 diprediksi akan terjadi resesi global.</b>', 
 unsafe_allow_html=True)
 st.markdown("---") 
 
