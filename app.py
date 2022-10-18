@@ -303,7 +303,7 @@ with ua_ina:
     with st.expander("DETAIL"):
         st.markdown("---")
         ua_ina_chart = """
-        <iframe  width='100%' height='500' frameborder='0' style='padding:10px 0;' src='https://wits.worldbank.org/en/Widget/Chart/Country/UKR/Year/2020/TradeFlow/Export/Partner/IDN/Product/all-groups'></iframe>
+        <iframe  width='100%' height='500' frameborder='0' style='padding:10px 0;' src='https://wits.worldbank.org/en/Widget/Chart/Country/UKR/Year/2020/TradeFlow/Export/Partner/IDN/Product/all-groups'; scroll='no'></iframe>
         """
         components.html(ua_ina_chart,height=505)
         st.caption('Sumber : Ukraine Product Exports to Indonesia 2020, https://wits.worldbank.org')
