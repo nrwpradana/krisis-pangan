@@ -300,6 +300,13 @@ with ua_ina:
     menyebabkan rantai pasok pangan dari Ukraina ke Indonesia terganggu.<br>', 
     unsafe_allow_html=True)
 
+    st.expander("DETAIL IMPOR")
+    ua_ina_chart = """
+    <iframe  width='400' height='500' frameborder='0' style='padding:10px 0;' src='https://wits.worldbank.org/en/Widget/Chart/Country/UKR/Year/2020/TradeFlow/Export/Partner/IDN/Product/all-groups'></iframe>
+    """
+    components.html(ua_ina_chart,height=405)
+
+
 with ru_ina:
     st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
             ' Section Under Construction \
