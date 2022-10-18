@@ -301,16 +301,7 @@ with ua_ina:
     unsafe_allow_html=True)
 
     ua_ina = pd.read_csv("data/export_ua_ina.csv", sep=";")
-    fig1 = px.bar(ua_ina, y="Exports_to_Indonesia", x="Value", orientation='h', 
-              range_x=[0,50], width=600, height=300,
-              color_discrete_sequence=['rgba(255,244,51,0.8)', 'rgba(37,58,255,0.8)'],
-              template="simple_white")
-    fig1.update_layout(title_text="<b>Ekspor Agrifood Ukraina & Rusia 2019-2020</b>",
-                       legend=dict(y=0.5, xanchor="right", title="Negara"))
-    fig1.update_traces(hovertemplate='<b>%{y}</b><br> Persentase Ekspor: %{x:.2f}%<extra></extra>')
-    fig1.update_xaxes(title="<b>Persentase Ekspor (%)</b>",tickfont=dict(size=16), showgrid=False, gridcolor='black')
-    fig1.update_yaxes(title=None, tickfont=dict(size=16))
-    st.plotly_chart(fig1)
+    st.bar_chart(data=ua_ina,x='Value', y='Exports_to_Indonesia', width=0, height=0, use_container_width=True)
     st.caption("Sumber : UN Comtrade Database, https://comtradeplus.un.org/.")
 
 
