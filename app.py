@@ -292,12 +292,12 @@ with ua_ina:
     ukraina_string = """
     <iframe class='embed-responsive-item' width='100%' height='400px' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=Ekspor Global Ukraina' style='border:none; scrolling='no''></iframe>
     """
-    components.html(ukraina_string,height=400)
+    components.html(ukraina_string,height=405)
     st.caption('Sumber : Ukraine Exports By Country, https://tradingeconomics.com/ukraine/exports-by-country.')
 
     st.markdown(p_format+'Berdasarkan data ekspor negara Ukraina dapat diketahui jika Indonesia merupakan salah satu negara tujuan ekspor Ukraina yang penting\
     <b> Indonesia bergantung pada ekspor dari Ukraina sebesar 1,1% total ekspor Ukraina</b>. Dengan adanya konflik antara Ukraina dan Rusia secara tidak langsung akan \
-    menyebabkan rantai pasok pangan dari Ukraina ke Indonesia terganggu.', 
+    menyebabkan rantai pasok pangan dari Ukraina ke Indonesia terganggu.<br>', 
     unsafe_allow_html=True)
 
 with ru_ina:
