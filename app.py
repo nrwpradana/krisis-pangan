@@ -313,7 +313,7 @@ with ru_ina:
     rusia_string="""
     <iframe class='embed-responsive-item' width='100%' height='400px' src='https://comtrade.tradingeconomics.com/comtrade/share?r=rus&c=0000&v=treemapmarkets&t=1&title=' style='border:none; scrolling='no''></iframe>
     """
-    components.html(ukraina_string,height=405)
+    components.html(rusia_string,height=405)
     st.caption('Sumber : Russia Imports By Country, https://tradingeconomics.com/russia/imports-by-country.')
 
 
