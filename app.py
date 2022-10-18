@@ -310,9 +310,11 @@ with ua_ina:
 
 
 with ru_ina:
-    st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
-            ' Section Under Construction \
-            </strike>⚙️</h5>', unsafe_allow_html=True)
+    rusia_string="""
+    <iframe class='embed-responsive-item' width='100%' height='400px' src='https://comtrade.tradingeconomics.com/comtrade/share?r=rus&c=0000&v=treemapmarkets&t=1&title=' style='border:none; scrolling='no''></iframe>
+    """
+    components.html(ukraina_string,height=405)
+    st.caption('Sumber : Russia Imports By Country, https://tradingeconomics.com/russia/imports-by-country.')
 
 
 # BAGIAN E
