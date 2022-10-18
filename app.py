@@ -292,7 +292,7 @@ with ua_ina:
     ukraina_string = """
     <iframe class='embed-responsive-item' src='https://comtrade.tradingeconomics.com/comtrade/share?r=ukr&c=0000&v=treemapmarkets&t=2&title=Ekspor Ukraina' style='border:none; scrolling='no';min-width: 100%;height=4000px'></iframe>
     """
-    components.html(ukraina_string)
+    components.html(ukraina_string,height=430)
 
 with ru_ina:
     st.markdown('<h5 style="font-family:Papyrus; background-color: white">⚙️<strike>'+
