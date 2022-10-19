@@ -313,7 +313,7 @@ with ru_ina:
     rusia_string="""
     <iframe class='embed-responsive-item' width='100%' height='400px' src='https://comtrade.tradingeconomics.com/comtrade/share?r=rus&c=0000&v=treemapmarkets&t=2&title=Ekspor Global Rusia' style='border:none; scrolling='no''></iframe>
     """
-    components.html(rusia_string,height=410)
+    components.html(rusia_string,height=415)
     st.caption('Sumber : Russia Exports By Country, https://tradingeconomics.com/russia/exports-by-country.')
 
     st.markdown(p_format+'Berdasarkan data ekspor negara Rusia dapat diketahui jika Indonesia merupakan salah satu negara tujuan ekspor dari Rusia namun dengan persentase yang kecil. \
