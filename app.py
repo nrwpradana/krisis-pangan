@@ -328,6 +328,7 @@ with ru_ina:
         """
         components.html(rus_ina_chart,height=450)
         st.caption('Sumber : Russia Exports to Indonesia, https://tradingeconomics.com/russia/exports/indonesia.')
+
 st.markdown("---") 
 
 # BAGIAN E
